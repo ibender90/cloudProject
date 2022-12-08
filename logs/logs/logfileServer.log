@@ -1,0 +1,26 @@
+INFO  2022-12-08 17:34:22 [main] database.DataBaseService (DataBaseService.java:189) - CONNECTION WITH DATABASE ESTABLISHED
+INFO  2022-12-08 17:34:22 [main] database.DataBaseService (DataBaseService.java:83) - USERS TABLE CREATED
+INFO  2022-12-08 17:34:22 [main] database.DataBaseService (DataBaseService.java:95) - TOKENS TABLE CREATED
+INFO  2022-12-08 17:34:22 [main] server.NettyServer (NettyServer.java:36) - SERVER STARTED
+INFO  2022-12-08 17:34:22 [main] server.FileHandler (FileHandler.java:48) - ROOT DIRECTORY WAS CREATED
+INFO  2022-12-08 17:34:49 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:29) - server received CommandMessageWithInfo{command=REGISTER, content=[1234&^$%, bender, 1234], path='null', filesArray=null}
+INFO  2022-12-08 17:34:49 [nioEventLoopGroup-3-1] database.DataBaseService (DataBaseService.java:160) - USER bender WAS ADDED TO DATABASE
+INFO  2022-12-08 17:34:49 [nioEventLoopGroup-3-1] database.DataBaseService (DataBaseService.java:37) - TOKEN 1234&^$%ASSIGNED TO USER bender
+INFO  2022-12-08 17:34:49 [nioEventLoopGroup-3-1] database.DataBaseService (DataBaseService.java:28) - USER REGISTERED SUCCESSFULLY bender
+INFO  2022-12-08 17:34:49 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:119) - RESPONSE IS CommandMessageWithInfo{command=AUTH_OK, content=[1], path='null', filesArray=null}
+INFO  2022-12-08 17:34:49 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:29) - server received CommandMessageWithInfo{command=INIT, content=[1], path='null', filesArray=null}
+INFO  2022-12-08 17:34:49 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:119) - RESPONSE IS CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1/bender', filesArray=[readme.txt]}
+INFO  2022-12-08 17:34:57 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:29) - server received CommandMessageWithInfo{command=MKDIR, content=null, path='netty_server/serverFolder/1/bender/folder', filesArray=null}
+INFO  2022-12-08 17:34:57 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:119) - RESPONSE IS CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1/bender', filesArray=[folder, readme.txt]}
+INFO  2022-12-08 17:34:58 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:29) - server received CommandMessageWithInfo{command=CD, content=null, path='netty_server/serverFolder/1/bender/folder', filesArray=null}
+INFO  2022-12-08 17:34:58 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:119) - RESPONSE IS CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1/bender/folder', filesArray=[]}
+INFO  2022-12-08 17:35:03 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:29) - server received CommandMessageWithInfo{command=MKDIR, content=null, path='netty_server/serverFolder/1/bender/folder/empty', filesArray=null}
+INFO  2022-12-08 17:35:03 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:119) - RESPONSE IS CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1/bender/folder', filesArray=[empty]}
+INFO  2022-12-08 17:35:07 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:29) - server received CommandMessageWithInfo{command=DEL, content=null, path='netty_server/serverFolder/1/bender/folder/empty', filesArray=null}
+INFO  2022-12-08 17:35:07 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:119) - RESPONSE IS CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1/bender/folder', filesArray=[]}
+INFO  2022-12-08 17:35:09 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:29) - server received CommandMessageWithInfo{command=CD, content=null, path='netty_server/serverFolder/1/bender/folder/..', filesArray=null}
+INFO  2022-12-08 17:35:09 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:119) - RESPONSE IS CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1/bender', filesArray=[folder, readme.txt]}
+INFO  2022-12-08 17:35:11 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:29) - server received CommandMessageWithInfo{command=CD, content=null, path='netty_server/serverFolder/1/bender/folder', filesArray=null}
+INFO  2022-12-08 17:35:11 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:119) - RESPONSE IS CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1/bender/folder', filesArray=[]}
+INFO  2022-12-08 17:35:11 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:29) - server received CommandMessageWithInfo{command=CD, content=null, path='netty_server/serverFolder/1/bender/folder/..', filesArray=null}
+INFO  2022-12-08 17:35:11 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:119) - RESPONSE IS CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1/bender', filesArray=[folder, readme.txt]}
