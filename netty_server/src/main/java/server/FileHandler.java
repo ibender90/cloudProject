@@ -23,7 +23,9 @@ public class FileHandler {
     private static final String readmeContent = "Welcome to cloud service app";
 
     public static String getPathByID(String id) {
+        LOGGER.info(service.getNick(id));
         return "netty_server/serverFolder/" + id + "/" + service.getNick(id);
+
     }
 
     public static String levelUp(String stringPath) {
@@ -108,7 +110,16 @@ public class FileHandler {
         }
         toDelete.delete();
     }
-//    public static void main(String[] args) throws IOException {
+
+    public static void renameFolder(String oldPath, String newPath) {
+        File dir = new File(oldPath);
+        dir.renameTo(new File(newPath));
+    }
+    public static void main(String[] args) throws IOException {
+
+        renameFolder("netty_server/serverFolder/1/lender" ,
+                "netty_server/serverFolder/1/fender");
+    }
 //        System.out.println(levelUp("serverFolder/1/nick1/folder"));
 //}
 //        String path = "netty_server/serverFolder/1/nick1";

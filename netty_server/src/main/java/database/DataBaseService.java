@@ -211,6 +211,14 @@ public class DataBaseService {
             LOGGER.error(e.getMessage());
         }
     }
+
+    public void changeNick(String userId, String newNick) throws SQLException {
+        PreparedStatement preparedStatement = connection.prepareStatement("UPDATE users SET nick = ?" +
+                "WHERE id = ?");
+        preparedStatement.setString(1, newNick);
+        preparedStatement.setString(2, userId);
+        preparedStatement.execute();
+    }
 }
 //    public static void main(String[] args) throws SQLException, ClassNotFoundException, WrongLoginOrPassException {
 //

@@ -5,7 +5,7 @@ import java.util.Objects;
 public enum Commands {
     MKDIR("@%mkdrir"), DEL("@%DELETE"), AUTH("@%auth"), DISCONNECT("@?DISCN"),
     AUTH_OK("@%AOK"), ERROR("@%ER"), PATHANDFILES("@%ALLOK"), DOWNLOAD("@%DWNLD"),
-    CD("@%CHANGEDIR"), INIT("@%INITIALIZE"), REGISTER("@%REGISTERUSER");
+    CD("@%CHANGEDIR"), INIT("@%INITIALIZE"), REGISTER("@%REGISTERUSER"), CHANGENICK("@%NICKCHANGE");
 
     private String command;
 

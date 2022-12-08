@@ -108,6 +108,7 @@
             <children>
                <Button onAction="#download" mnemonicParsing="false" prefHeight="34.0" prefWidth="209.0" text="DOWNLOAD" />
                <Button onAction="#upload" mnemonicParsing="false" prefHeight="34.0" prefWidth="209.0" text="UPLOAD..." />
+               <Button onAction="#delete" mnemonicParsing="false" prefHeight="34.0" prefWidth="209.0" text="DELETE" />
                <Button layoutX="10.0" layoutY="44.0" mnemonicParsing="false" onAction="#newFolderButtonPushed" prefHeight="34.0" prefWidth="209.0" text="New folder" />
             </children>
             <opaqueInsets>

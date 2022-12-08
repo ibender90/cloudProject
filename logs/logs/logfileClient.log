@@ -7,3 +7,561 @@ INFO  2022-12-08 17:35:07 [nioEventLoopGroup-2-1] controller.mainWindowControlle
 INFO  2022-12-08 17:35:09 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:124) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1/bender', filesArray=[folder, readme.txt]}
 INFO  2022-12-08 17:35:11 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:124) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1/bender/folder', filesArray=[]}
 INFO  2022-12-08 17:35:11 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:124) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1/bender', filesArray=[folder, readme.txt]}
+INFO  2022-12-08 17:52:34 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:124) - client received CommandMessageWithInfo{command=AUTH_OK, content=[1], path='null', filesArray=null}
+INFO  2022-12-08 17:52:34 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:124) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1/bender', filesArray=[folder, readme.txt]}
+INFO  2022-12-08 17:57:56 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:125) - client received CommandMessageWithInfo{command=AUTH_OK, content=[1], path='null', filesArray=null}
+INFO  2022-12-08 17:57:56 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:125) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1/bender', filesArray=[folder, readme.txt]}
+INFO  2022-12-08 17:58:00 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:125) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1/bender/folder', filesArray=[]}
+INFO  2022-12-08 17:58:02 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:125) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1/bender', filesArray=[folder, readme.txt]}
+INFO  2022-12-08 17:58:12 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:125) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1/bender', filesArray=[readme.txt]}
+INFO  2022-12-08 18:43:25 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=AUTH_OK, content=[1], path='null', filesArray=null}
+INFO  2022-12-08 18:43:25 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1/bender', filesArray=[readme.txt]}
+INFO  2022-12-08 18:44:36 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=AUTH_OK, content=[1], path='null', filesArray=null}
+INFO  2022-12-08 18:44:36 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1/bender', filesArray=[readme.txt]}
+INFO  2022-12-08 18:44:39 [JavaFX Application Thread] controller.mainWindowController (mainWindowController.java:208) - Error shown to user: Login must be 3-12 characters
+INFO  2022-12-08 18:44:54 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1/lender', filesArray=[readme.txt]}
+INFO  2022-12-08 18:45:00 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1/lender', filesArray=[gfdg, readme.txt]}
+INFO  2022-12-08 18:45:03 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1/lender/gfdg', filesArray=[]}
+INFO  2022-12-08 18:45:07 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1/lender', filesArray=null}
+INFO  2022-12-08 18:45:10 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1/lender', filesArray=null}
+INFO  2022-12-08 18:46:29 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=AUTH_OK, content=[1], path='null', filesArray=null}
+INFO  2022-12-08 18:46:29 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1/', filesArray=null}
+INFO  2022-12-08 19:50:16 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=AUTH_OK, content=[1], path='null', filesArray=null}
+INFO  2022-12-08 19:50:16 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1/', filesArray=[fender]}
+INFO  2022-12-08 19:50:18 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1//fender', filesArray=[lender]}
+INFO  2022-12-08 19:50:18 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1//fender/lender', filesArray=[gfdg, readme.txt]}
+INFO  2022-12-08 19:50:25 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1/fender/lender', filesArray=[readme.txt]}
+INFO  2022-12-08 19:50:28 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1/fender', filesArray=[lender]}
+INFO  2022-12-08 19:50:29 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1', filesArray=[fender]}
+WARN  2022-12-08 19:50:29 [nioEventLoopGroup-2-1] io.netty.channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.StringIndexOutOfBoundsException: begin 28, end 27, length 27
+	at java.lang.String.checkBoundsBeginEnd(String.java:4601) ~[?:?]
+	at java.lang.String.substring(String.java:2704) ~[?:?]
+	at java.lang.String.substring(String.java:2677) ~[?:?]
+	at controller.mainWindowController.setPathLabel(mainWindowController.java:138) ~[classes/:?]
+	at controller.mainWindowController.initializePath(mainWindowController.java:192) ~[classes/:?]
+	at controller.mainWindowController.onReceive(mainWindowController.java:151) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:17) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:7) ~[classes/:?]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:308) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+INFO  2022-12-08 19:50:30 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1/fender/lender', filesArray=[readme.txt]}
+INFO  2022-12-08 19:50:31 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1/fender', filesArray=[lender]}
+INFO  2022-12-08 19:50:40 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1/fender', filesArray=[]}
+INFO  2022-12-08 19:50:49 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1/fender', filesArray=[folder]}
+INFO  2022-12-08 19:50:51 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1', filesArray=[fender]}
+WARN  2022-12-08 19:50:51 [nioEventLoopGroup-2-1] io.netty.channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.StringIndexOutOfBoundsException: begin 28, end 27, length 27
+	at java.lang.String.checkBoundsBeginEnd(String.java:4601) ~[?:?]
+	at java.lang.String.substring(String.java:2704) ~[?:?]
+	at java.lang.String.substring(String.java:2677) ~[?:?]
+	at controller.mainWindowController.setPathLabel(mainWindowController.java:138) ~[classes/:?]
+	at controller.mainWindowController.initializePath(mainWindowController.java:192) ~[classes/:?]
+	at controller.mainWindowController.onReceive(mainWindowController.java:151) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:17) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:7) ~[classes/:?]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:308) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+INFO  2022-12-08 19:50:52 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1', filesArray=[fender]}
+WARN  2022-12-08 19:50:52 [nioEventLoopGroup-2-1] io.netty.channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.StringIndexOutOfBoundsException: begin 28, end 27, length 27
+	at java.lang.String.checkBoundsBeginEnd(String.java:4601) ~[?:?]
+	at java.lang.String.substring(String.java:2704) ~[?:?]
+	at java.lang.String.substring(String.java:2677) ~[?:?]
+	at controller.mainWindowController.setPathLabel(mainWindowController.java:138) ~[classes/:?]
+	at controller.mainWindowController.initializePath(mainWindowController.java:192) ~[classes/:?]
+	at controller.mainWindowController.onReceive(mainWindowController.java:151) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:17) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:7) ~[classes/:?]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:308) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+INFO  2022-12-08 19:50:53 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1', filesArray=[fender]}
+WARN  2022-12-08 19:50:53 [nioEventLoopGroup-2-1] io.netty.channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.StringIndexOutOfBoundsException: begin 28, end 27, length 27
+	at java.lang.String.checkBoundsBeginEnd(String.java:4601) ~[?:?]
+	at java.lang.String.substring(String.java:2704) ~[?:?]
+	at java.lang.String.substring(String.java:2677) ~[?:?]
+	at controller.mainWindowController.setPathLabel(mainWindowController.java:138) ~[classes/:?]
+	at controller.mainWindowController.initializePath(mainWindowController.java:192) ~[classes/:?]
+	at controller.mainWindowController.onReceive(mainWindowController.java:151) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:17) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:7) ~[classes/:?]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:308) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+INFO  2022-12-08 19:50:53 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1', filesArray=[fender]}
+WARN  2022-12-08 19:50:53 [nioEventLoopGroup-2-1] io.netty.channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.StringIndexOutOfBoundsException: begin 28, end 27, length 27
+	at java.lang.String.checkBoundsBeginEnd(String.java:4601) ~[?:?]
+	at java.lang.String.substring(String.java:2704) ~[?:?]
+	at java.lang.String.substring(String.java:2677) ~[?:?]
+	at controller.mainWindowController.setPathLabel(mainWindowController.java:138) ~[classes/:?]
+	at controller.mainWindowController.initializePath(mainWindowController.java:192) ~[classes/:?]
+	at controller.mainWindowController.onReceive(mainWindowController.java:151) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:17) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:7) ~[classes/:?]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:308) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+INFO  2022-12-08 19:50:54 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1', filesArray=[fender]}
+WARN  2022-12-08 19:50:54 [nioEventLoopGroup-2-1] io.netty.channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.StringIndexOutOfBoundsException: begin 28, end 27, length 27
+	at java.lang.String.checkBoundsBeginEnd(String.java:4601) ~[?:?]
+	at java.lang.String.substring(String.java:2704) ~[?:?]
+	at java.lang.String.substring(String.java:2677) ~[?:?]
+	at controller.mainWindowController.setPathLabel(mainWindowController.java:138) ~[classes/:?]
+	at controller.mainWindowController.initializePath(mainWindowController.java:192) ~[classes/:?]
+	at controller.mainWindowController.onReceive(mainWindowController.java:151) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:17) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:7) ~[classes/:?]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:308) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+INFO  2022-12-08 19:51:32 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=AUTH_OK, content=[1], path='null', filesArray=null}
+INFO  2022-12-08 19:51:32 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1/', filesArray=[fender]}
+INFO  2022-12-08 19:51:50 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1', filesArray=[folder2, fender]}
+WARN  2022-12-08 19:51:50 [nioEventLoopGroup-2-1] io.netty.channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.StringIndexOutOfBoundsException: begin 28, end 27, length 27
+	at java.lang.String.checkBoundsBeginEnd(String.java:4601) ~[?:?]
+	at java.lang.String.substring(String.java:2704) ~[?:?]
+	at java.lang.String.substring(String.java:2677) ~[?:?]
+	at controller.mainWindowController.setPathLabel(mainWindowController.java:138) ~[classes/:?]
+	at controller.mainWindowController.initializePath(mainWindowController.java:192) ~[classes/:?]
+	at controller.mainWindowController.onReceive(mainWindowController.java:151) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:17) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:7) ~[classes/:?]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:308) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+INFO  2022-12-08 19:51:51 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1//fender', filesArray=[folder]}
+INFO  2022-12-08 19:51:53 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1', filesArray=[folder2, fender]}
+WARN  2022-12-08 19:51:53 [nioEventLoopGroup-2-1] io.netty.channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.StringIndexOutOfBoundsException: begin 28, end 27, length 27
+	at java.lang.String.checkBoundsBeginEnd(String.java:4601) ~[?:?]
+	at java.lang.String.substring(String.java:2704) ~[?:?]
+	at java.lang.String.substring(String.java:2677) ~[?:?]
+	at controller.mainWindowController.setPathLabel(mainWindowController.java:138) ~[classes/:?]
+	at controller.mainWindowController.initializePath(mainWindowController.java:192) ~[classes/:?]
+	at controller.mainWindowController.onReceive(mainWindowController.java:151) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:17) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:7) ~[classes/:?]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:308) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+INFO  2022-12-08 19:51:58 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1//fender/folder', filesArray=[]}
+INFO  2022-12-08 19:52:00 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1/fender', filesArray=[folder]}
+INFO  2022-12-08 19:52:01 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1', filesArray=[folder2, fender]}
+WARN  2022-12-08 19:52:01 [nioEventLoopGroup-2-1] io.netty.channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.StringIndexOutOfBoundsException: begin 28, end 27, length 27
+	at java.lang.String.checkBoundsBeginEnd(String.java:4601) ~[?:?]
+	at java.lang.String.substring(String.java:2704) ~[?:?]
+	at java.lang.String.substring(String.java:2677) ~[?:?]
+	at controller.mainWindowController.setPathLabel(mainWindowController.java:138) ~[classes/:?]
+	at controller.mainWindowController.initializePath(mainWindowController.java:192) ~[classes/:?]
+	at controller.mainWindowController.onReceive(mainWindowController.java:151) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:17) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:7) ~[classes/:?]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:308) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+INFO  2022-12-08 19:53:39 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=AUTH_OK, content=[1], path='null', filesArray=null}
+INFO  2022-12-08 19:53:39 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1/', filesArray=[folder2, fender]}
+INFO  2022-12-08 19:53:41 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1//fender', filesArray=[folder]}
+INFO  2022-12-08 19:53:42 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1', filesArray=[folder2, fender]}
+WARN  2022-12-08 19:53:42 [nioEventLoopGroup-2-1] io.netty.channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.StringIndexOutOfBoundsException: begin 28, end 27, length 27
+	at java.lang.String.checkBoundsBeginEnd(String.java:4601) ~[?:?]
+	at java.lang.String.substring(String.java:2704) ~[?:?]
+	at java.lang.String.substring(String.java:2677) ~[?:?]
+	at controller.mainWindowController.setPathLabel(mainWindowController.java:138) ~[classes/:?]
+	at controller.mainWindowController.initializePath(mainWindowController.java:192) ~[classes/:?]
+	at controller.mainWindowController.onReceive(mainWindowController.java:151) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:17) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:7) ~[classes/:?]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:308) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+INFO  2022-12-08 19:55:45 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=AUTH_OK, content=[2], path='null', filesArray=null}
+INFO  2022-12-08 19:55:45 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/log1', filesArray=[readme.txt]}
+INFO  2022-12-08 19:55:55 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/log1', filesArray=[folder, readme.txt]}
+INFO  2022-12-08 19:55:57 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/log1/folder', filesArray=[]}
+INFO  2022-12-08 19:55:58 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/log1', filesArray=[folder, readme.txt]}
+INFO  2022-12-08 19:56:01 [JavaFX Application Thread] controller.mainWindowController (mainWindowController.java:208) - Error shown to user: Login must be 3-12 characters
+INFO  2022-12-08 19:56:11 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:143) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/login', filesArray=[folder, readme.txt]}
+INFO  2022-12-08 20:00:58 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:144) - client received CommandMessageWithInfo{command=AUTH_OK, content=[2], path='null', filesArray=null}
+INFO  2022-12-08 20:00:58 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:144) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/', filesArray=[login]}
+INFO  2022-12-08 20:01:00 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:144) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2//login', filesArray=[folder, readme.txt]}
+INFO  2022-12-08 20:01:04 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:144) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2', filesArray=[login]}
+WARN  2022-12-08 20:01:04 [nioEventLoopGroup-2-1] io.netty.channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.StringIndexOutOfBoundsException: begin 28, end 27, length 27
+	at java.lang.String.checkBoundsBeginEnd(String.java:4601) ~[?:?]
+	at java.lang.String.substring(String.java:2704) ~[?:?]
+	at java.lang.String.substring(String.java:2677) ~[?:?]
+	at controller.mainWindowController.setPathLabel(mainWindowController.java:139) ~[classes/:?]
+	at controller.mainWindowController.initializePath(mainWindowController.java:193) ~[classes/:?]
+	at controller.mainWindowController.onReceive(mainWindowController.java:152) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:17) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:7) ~[classes/:?]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:308) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+INFO  2022-12-08 20:01:06 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:144) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2', filesArray=[login]}
+WARN  2022-12-08 20:01:06 [nioEventLoopGroup-2-1] io.netty.channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.StringIndexOutOfBoundsException: begin 28, end 27, length 27
+	at java.lang.String.checkBoundsBeginEnd(String.java:4601) ~[?:?]
+	at java.lang.String.substring(String.java:2704) ~[?:?]
+	at java.lang.String.substring(String.java:2677) ~[?:?]
+	at controller.mainWindowController.setPathLabel(mainWindowController.java:139) ~[classes/:?]
+	at controller.mainWindowController.initializePath(mainWindowController.java:193) ~[classes/:?]
+	at controller.mainWindowController.onReceive(mainWindowController.java:152) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:17) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:7) ~[classes/:?]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:308) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+INFO  2022-12-08 20:01:21 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:144) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2', filesArray=[login]}
+WARN  2022-12-08 20:01:21 [nioEventLoopGroup-2-1] io.netty.channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.StringIndexOutOfBoundsException: begin 28, end 27, length 27
+	at java.lang.String.checkBoundsBeginEnd(String.java:4601) ~[?:?]
+	at java.lang.String.substring(String.java:2704) ~[?:?]
+	at java.lang.String.substring(String.java:2677) ~[?:?]
+	at controller.mainWindowController.setPathLabel(mainWindowController.java:139) ~[classes/:?]
+	at controller.mainWindowController.initializePath(mainWindowController.java:193) ~[classes/:?]
+	at controller.mainWindowController.onReceive(mainWindowController.java:152) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:17) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:7) ~[classes/:?]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:308) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+INFO  2022-12-08 20:01:40 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:144) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2', filesArray=[login]}
+WARN  2022-12-08 20:01:40 [nioEventLoopGroup-2-1] io.netty.channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.StringIndexOutOfBoundsException: begin 28, end 27, length 27
+	at java.lang.String.checkBoundsBeginEnd(String.java:4601) ~[?:?]
+	at java.lang.String.substring(String.java:2704) ~[?:?]
+	at java.lang.String.substring(String.java:2677) ~[?:?]
+	at controller.mainWindowController.setPathLabel(mainWindowController.java:139) ~[classes/:?]
+	at controller.mainWindowController.initializePath(mainWindowController.java:193) ~[classes/:?]
+	at controller.mainWindowController.onReceive(mainWindowController.java:152) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:17) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:7) ~[classes/:?]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:308) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+INFO  2022-12-08 20:01:48 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:144) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2//login/folder', filesArray=[]}
+INFO  2022-12-08 20:01:48 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:144) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/login', filesArray=[folder, readme.txt]}
+INFO  2022-12-08 20:01:53 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:144) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2', filesArray=[login]}
+WARN  2022-12-08 20:01:53 [nioEventLoopGroup-2-1] io.netty.channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.StringIndexOutOfBoundsException: begin 28, end 27, length 27
+	at java.lang.String.checkBoundsBeginEnd(String.java:4601) ~[?:?]
+	at java.lang.String.substring(String.java:2704) ~[?:?]
+	at java.lang.String.substring(String.java:2677) ~[?:?]
+	at controller.mainWindowController.setPathLabel(mainWindowController.java:139) ~[classes/:?]
+	at controller.mainWindowController.initializePath(mainWindowController.java:193) ~[classes/:?]
+	at controller.mainWindowController.onReceive(mainWindowController.java:152) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:17) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:7) ~[classes/:?]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:308) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+INFO  2022-12-08 20:03:13 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:144) - client received CommandMessageWithInfo{command=AUTH_OK, content=[2], path='null', filesArray=null}
+INFO  2022-12-08 20:03:13 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:144) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/', filesArray=[login]}
+INFO  2022-12-08 20:07:37 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:144) - client received CommandMessageWithInfo{command=AUTH_OK, content=[2], path='null', filesArray=null}
+INFO  2022-12-08 20:07:37 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:144) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/', filesArray=[login]}
+INFO  2022-12-08 20:09:59 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:144) - client received CommandMessageWithInfo{command=AUTH_OK, content=[2], path='null', filesArray=null}
+INFO  2022-12-08 20:09:59 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:144) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/', filesArray=[login]}
+INFO  2022-12-08 20:10:02 [JavaFX Application Thread] controller.mainWindowController (mainWindowController.java:209) - Error shown to user: Login must be 3-12 characters
+INFO  2022-12-08 20:10:09 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:144) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/login', filesArray=[folder, readme.txt]}
+INFO  2022-12-08 20:10:32 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:144) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/login/folder', filesArray=[]}
+INFO  2022-12-08 20:10:32 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:144) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/login', filesArray=[folder, readme.txt]}
+INFO  2022-12-08 20:10:53 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:144) - client received CommandMessageWithInfo{command=AUTH_OK, content=[2], path='null', filesArray=null}
+INFO  2022-12-08 20:10:53 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:144) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/login', filesArray=[folder, readme.txt]}
+INFO  2022-12-08 20:11:08 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:144) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/login/folder', filesArray=[]}
+INFO  2022-12-08 20:11:09 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:144) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/login', filesArray=[folder, readme.txt]}

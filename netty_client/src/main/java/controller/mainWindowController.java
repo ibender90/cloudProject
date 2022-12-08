@@ -49,6 +49,8 @@ public class mainWindowController implements Initializable, OnMessageReceived {
     public PasswordField registerPasswordField;
     public PasswordField confirmPasswordField;
     public TextField tokenField;
+    public VBox changeNickPanel;
+    public TextField newNickField;
     private String userID;
 
     private String rootDirectoryForUser; //у каждого юзера будет root = serverFolder/id/nick
@@ -69,7 +71,25 @@ public class mainWindowController implements Initializable, OnMessageReceived {
     }
 
     public void changeNick(ActionEvent actionEvent) {
+        changeNickPanel.setVisible(true);
+        mainPanel.setVisible(false);
+        String newNick = newNickField.getText();
+        try{
+            hasForbiddenCharacters(newNick);
+            if (sizeNotWithinLimits(newNick)) {
+                throw new LoginSizeNotInLimitsException();
+            }
+            rootDirectoryForUser = null;
+            sendValidNick(newNick);
+            changeNickPanel.setVisible(false);
+            mainPanel.setVisible(true);
+        } catch (IncorrectLoginNameException | LoginSizeNotInLimitsException e) {
+            showError(e.getMessage());
+        }
+    }
 
+    private void sendValidNick(String newNick) {
+        net.sendMessage(new CommandMessageWithInfo(CHANGENICK, new String[]{userID, newNick}));
     }
 
     public void cancelNewFolder(ActionEvent actionEvent) {
@@ -347,5 +367,8 @@ public class mainWindowController implements Initializable, OnMessageReceived {
         return net;
     }
 
+    public void changePass(ActionEvent actionEvent) {
+
+    }
 }
 
