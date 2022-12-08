@@ -13,6 +13,7 @@ import java.io.File;
 import java.nio.file.FileAlreadyExistsException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.sql.SQLException;
 
 import static enums.Commands.*;
 
@@ -45,7 +46,23 @@ public class MessageHandler extends SimpleChannelInboundHandler<AbstractMessage>
                     }
                 }
                 case INIT -> {
+
                     setPathAndFilesResponse(FileHandler.getPathByID(content[0]));
+                }
+                case CHANGENICK -> {
+                    String newNick = content[1];
+                    String userId = content[0];
+                    String oldNick = service.getNick(userId);
+                    try {
+                        service.changeNick(userId, newNick);
+                        FileHandler.renameFolder("netty_server/serverFolder/" + userId + "/" + oldNick,
+                                "netty_server/serverFolder/" + userId + "/" + newNick);
+                    } catch (SQLException e) {
+                        //todo
+                        e.printStackTrace();
+                    }
+                    setPathAndFilesResponse("netty_server/serverFolder/" + userId + "/" + newNick);
+
                 }
                 case REGISTER -> {
                     try {
@@ -116,7 +133,7 @@ public class MessageHandler extends SimpleChannelInboundHandler<AbstractMessage>
                 errorMessage(e.getMessage());
             }
         }
-        LOGGER.info("RESPONSE IS "+ response);
+        LOGGER.info("RESPONSE IS " + response);
         ctx.writeAndFlush(response);
     }
 

@@ -64,11 +64,10 @@
 
     </VBox>
     <VBox fx:id="mainPanel" prefHeight="394.0" prefWidth="600.0" visible="false">
-        <MenuBar prefHeight="9.0" prefWidth="600.0" visible="false">
-            <Menu text="File">
-                <MenuItem onAction="#mockAction" text="Open" />
-                <MenuItem onAction="#mockAction" text="Connect" />
-                <MenuItem onAction="#mockAction" text="Something" />
+        <MenuBar prefHeight="9.0" prefWidth="600.0" visible="true">
+            <Menu text="User">
+                <MenuItem onAction="#changeNick" text="Change nick" />
+                <MenuItem onAction="#changePass" text="Change pass" />
                 <MenuItem onAction="#closeApplication" text="Exit" />
             </Menu>
             <Menu text="Edit">
