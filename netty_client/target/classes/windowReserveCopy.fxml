@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.mainWindowController">
+
+    <VBox fx:id="changeNickPanel" visible="false">
+
+        <HBox VBox.vgrow="ALWAYS">
+            <VBox>
+                <Label text="Please enter your new nickname:" />
+                <TextField fx:id="newNickField" onAction="#showChangeNickPanel" />
+            </VBox>
+        </HBox>
+        <Button onAction="#showChangeNickPanel" text="SEND" />
+        <Button onAction="#hideNewFolderPanel" text="RETURN" />
+    </VBox>
+    <VBox fx:id="changePasswordPanel" visible="false">
+
+        <HBox VBox.vgrow="ALWAYS">
+            <VBox>
+                <Label text="Please enter your old password:" />
+                <PasswordField fx:id="oldPassField" onAction="#sendChangePass" />
+            </VBox>
+            <VBox>
+                <Label text="Please enter your new password:" />
+                <PasswordField fx:id="newPasswordField" onAction="#sendChangePass" />
+            </VBox>
+        </HBox>
+        <Button onAction="#sendChangePass" text="SEND" />
+        <Button onAction="#hideNewFolderPanel" text="RETURN" />
+    </VBox>
+    <VBox fx:id="loginPanel" layoutX="220.0" layoutY="120.0" visible="true">
+        <Label text="Login: " />
+        <TextField fx:id="loginField" />
+        <Label text="Password: " />
+        <PasswordField fx:id="passwordField" onAction="#login" />
+        <Button onAction="#login" text="connect" />
+        <Button onAction="#viewRegisterWindow" text="register"/>
+    </VBox>
+    <VBox fx:id="registerPanel" layoutX="220.0" layoutY="120" visible="false">
+
+        <Label text="Login: "/>
+        <TextField fx:id="registerLoginField"/>
+        <Label text="Password: "/>
+        <PasswordField fx:id="registerPasswordField"/>
+        <Label text="Confirm password: "/>
+        <PasswordField fx:id="confirmPasswordField"/>
+        <Label text="Token: "/>
+        <TextField fx:id="tokenField"/>
+        <Button onAction="#register" text="register"/>
+        <Button onAction="#viewLoginWindow" text="back to login"/>
+
+    </VBox>
+    <VBox fx:id="mainPanel" prefHeight="394.0" prefWidth="600.0" visible="false">
+        <MenuBar prefHeight="9.0" prefWidth="600.0" visible="false">
+            <Menu text="File">
+                <MenuItem onAction="#mockAction" text="Open" />
+                <MenuItem onAction="#mockAction" text="Connect" />
+                <MenuItem onAction="#mockAction" text="Something" />
+                <MenuItem onAction="#closeApplication" text="Exit" />
+            </Menu>
+            <Menu text="Edit">
+                <MenuItem onAction="#mockAction" text="Open" />
+                <MenuItem onAction="#mockAction" text="Connect" />
+                <MenuItem onAction="#mockAction" text="Something" />
+                <MenuItem onAction="#mockAction" text="Exit" />
+            </Menu>
+            <Menu text="View">
+                <MenuItem onAction="#mockAction" text="Open" />
+                <MenuItem onAction="#mockAction" text="Connect" />
+                <MenuItem onAction="#mockAction" text="Something" />
+                <MenuItem onAction="#mockAction" text="Exit" />
+            </Menu>
+            <Menu text="Help">
+                <MenuItem onAction="#mockAction" text="Open" />
+                <MenuItem onAction="#mockAction" text="Connect" />
+                <MenuItem onAction="#mockAction" text="Something" />
+                <MenuItem onAction="#mockAction" text="Exit" />
+            </Menu>
+        </MenuBar>
+        <HBox prefHeight="37.0" prefWidth="600.0">
+            <children>
+                <Button fx:id="goBackButton" onAction="#goBack" mnemonicParsing="false" prefHeight="37.0" prefWidth="111.0" text="go back" disable="true" />
+                <Label fx:id="pathLabel" prefHeight="39.0" prefWidth="475.0" text="   Path" />
+            </children>
+        </HBox>
+
+
+        <HBox alignment="BOTTOM_RIGHT" prefHeight="24.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+            <ListView fx:id="fileList" prefHeight="307.0" prefWidth="455.0">
+                <HBox.margin>
+                    <Insets left="6.0" right="6.0" />
+                </HBox.margin>
+            </ListView>
+         <VBox prefHeight="400.0" prefWidth="141.0">
+            <children>
+               <Button onAction="#download" mnemonicParsing="false" prefHeight="34.0" prefWidth="209.0" text="DOWNLOAD" />
+               <Button onAction="#upload" mnemonicParsing="false" prefHeight="34.0" prefWidth="209.0" text="UPLOAD..." />
+               <Button onAction="#delete" mnemonicParsing="false" prefHeight="34.0" prefWidth="209.0" text="DELETE" />
+               <Button layoutX="10.0" layoutY="44.0" mnemonicParsing="false" onAction="#newFolderButtonPushed" prefHeight="34.0" prefWidth="209.0" text="New folder" />
+            </children>
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+         </VBox>
+            <VBox.margin>
+                <Insets bottom="12.0" top="5.0" />
+            </VBox.margin>
+        </HBox>
+    </VBox>
+   <VBox fx:id="giveNameToFolderWindow" prefHeight="135.0" prefWidth="372.0" visible="false">
+      <children>
+         <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="42.0" prefWidth="375.0" text="ENTER FOLDER NAME" />
+         <TextField fx:id="nameInputField"/>
+         <HBox prefHeight="68.0" prefWidth="372.0">
+            <children>
+               <Button onAction="#createFolder" mnemonicParsing="false" prefHeight="70.0" prefWidth="194.0" text="OK" />
+               <Button onAction="#hideNewFolderPanel" mnemonicParsing="false" prefHeight="68.0" prefWidth="181.0" text="CANCEL" />
+            </children>
+         </HBox>
+      </children>
+   </VBox>
+
+</AnchorPane>
