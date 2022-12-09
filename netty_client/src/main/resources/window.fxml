@@ -20,11 +20,11 @@
         <HBox VBox.vgrow="ALWAYS">
             <VBox>
                 <Label text="Please enter your new nickname:" />
-                <TextField fx:id="newNickField" onAction="#changeNick" />
+                <TextField fx:id="newNickField" onAction="#renameUser" />
             </VBox>
         </HBox>
-        <Button onAction="#changeNick" text="SEND" />
-        <Button onAction="#cancelNewFolder" text="RETURN" />
+        <Button onAction="#renameUser" text="SEND" />
+        <Button onAction="#hideChangeNickPanel" text="RETURN" />
     </VBox>
     <VBox fx:id="changePasswordPanel" visible="false">
 
@@ -39,7 +39,7 @@
             </VBox>
         </HBox>
         <Button onAction="#sendChangePass" text="SEND" />
-        <Button onAction="#cancelNewFolder" text="RETURN" />
+        <Button onAction="#hideNewFolderPanel" text="RETURN" />
     </VBox>
     <VBox fx:id="loginPanel" layoutX="220.0" layoutY="120.0" visible="true">
         <Label text="Login: " />
@@ -66,7 +66,7 @@
     <VBox fx:id="mainPanel" prefHeight="394.0" prefWidth="600.0" visible="false">
         <MenuBar prefHeight="9.0" prefWidth="600.0" visible="true">
             <Menu text="User">
-                <MenuItem onAction="#changeNick" text="Change nick" />
+                <MenuItem onAction="#showChangeNickPanel" text="Change nick" />
                 <MenuItem onAction="#changePass" text="Change pass" />
                 <MenuItem onAction="#closeApplication" text="Exit" />
             </Menu>
@@ -125,8 +125,8 @@
          <TextField fx:id="nameInputField"/>
          <HBox prefHeight="68.0" prefWidth="372.0">
             <children>
-               <Button onAction="#makeFolder" mnemonicParsing="false" prefHeight="70.0" prefWidth="194.0" text="OK" />
-               <Button onAction="#cancelNewFolder" mnemonicParsing="false" prefHeight="68.0" prefWidth="181.0" text="CANCEL" />
+               <Button onAction="#createFolder" mnemonicParsing="false" prefHeight="70.0" prefWidth="194.0" text="OK" />
+               <Button onAction="#hideNewFolderPanel" mnemonicParsing="false" prefHeight="68.0" prefWidth="181.0" text="CANCEL" />
             </children>
          </HBox>
       </children>

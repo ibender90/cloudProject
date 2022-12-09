@@ -118,7 +118,7 @@ public class DataBaseService {
                 ps.setString(1, token);
                 ps.execute();
             } catch (SQLException e) {
-                //todo log
+                LOGGER.error("SQL exception, tokens were not added");
                 e.printStackTrace();
             }
         }

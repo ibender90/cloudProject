@@ -26,7 +26,6 @@ public class NettyServer {
     }
 
     public void run() throws InterruptedException {
-        //нужно ли проверять наличие файла с базой данных или его можно прикрепить в сборку?
         EventLoopGroup bossGroup = new NioEventLoopGroup();
         EventLoopGroup workerGroup = new NioEventLoopGroup();
         try{

@@ -565,3 +565,92 @@ INFO  2022-12-08 20:10:53 [nioEventLoopGroup-2-1] controller.mainWindowControlle
 INFO  2022-12-08 20:10:53 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:144) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/login', filesArray=[folder, readme.txt]}
 INFO  2022-12-08 20:11:08 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:144) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/login/folder', filesArray=[]}
 INFO  2022-12-08 20:11:09 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:144) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/login', filesArray=[folder, readme.txt]}
+INFO  2022-12-09 20:15:09 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:147) - client received CommandMessageWithInfo{command=AUTH_OK, content=[1], path='null', filesArray=null}
+INFO  2022-12-09 20:15:09 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:147) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1/', filesArray=null}
+INFO  2022-12-09 20:15:40 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:147) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/1', filesArray=[bender]}
+WARN  2022-12-09 20:15:40 [nioEventLoopGroup-2-1] io.netty.channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.StringIndexOutOfBoundsException: begin 28, end 27, length 27
+	at java.lang.String.checkBoundsBeginEnd(String.java:4601) ~[?:?]
+	at java.lang.String.substring(String.java:2704) ~[?:?]
+	at java.lang.String.substring(String.java:2677) ~[?:?]
+	at controller.mainWindowController.setPathLabel(mainWindowController.java:142) ~[classes/:?]
+	at controller.mainWindowController.initializePath(mainWindowController.java:196) ~[classes/:?]
+	at controller.mainWindowController.onReceive(mainWindowController.java:155) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:17) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:7) ~[classes/:?]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:308) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+INFO  2022-12-09 20:16:12 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:147) - client received CommandMessageWithInfo{command=AUTH_OK, content=[2], path='null', filesArray=null}
+INFO  2022-12-09 20:16:12 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:147) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/login', filesArray=[folder]}
+INFO  2022-12-09 20:16:18 [JavaFX Application Thread] controller.mainWindowController (mainWindowController.java:212) - Error shown to user: Choose different name
+INFO  2022-12-09 20:16:31 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:147) - client received CommandMessageWithInfo{command=ERROR, content=[Folder already exists], path='null', filesArray=null}
+INFO  2022-12-09 20:16:31 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:212) - Error shown to user: Folder already exists
+INFO  2022-12-09 20:17:45 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:147) - client received CommandMessageWithInfo{command=AUTH_OK, content=[2], path='null', filesArray=null}
+INFO  2022-12-09 20:17:45 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:147) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/login', filesArray=[folder]}
+INFO  2022-12-09 20:17:48 [JavaFX Application Thread] controller.mainWindowController (mainWindowController.java:212) - Error shown to user: Choose different name
+INFO  2022-12-09 20:17:58 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:147) - client received CommandMessageWithInfo{command=ERROR, content=[Folder already exists], path='null', filesArray=null}
+INFO  2022-12-09 20:17:58 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:212) - Error shown to user: Folder already exists
+INFO  2022-12-09 20:18:13 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:147) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/login', filesArray=[folder, bolder]}
+INFO  2022-12-09 20:18:14 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:147) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/login/bolder', filesArray=[]}
+INFO  2022-12-09 20:18:15 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:147) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/login', filesArray=[folder, bolder]}
+INFO  2022-12-09 20:18:17 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:147) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/login/folder', filesArray=[]}
+INFO  2022-12-09 20:18:18 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:147) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/login', filesArray=[folder, bolder]}
+INFO  2022-12-09 20:18:26 [JavaFX Application Thread] controller.mainWindowController (mainWindowController.java:212) - Error shown to user: Login must be 3-12 characters
+INFO  2022-12-09 20:18:33 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:147) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/nander', filesArray=[folder, bolder]}
+INFO  2022-12-09 20:18:35 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:147) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/nander/folder', filesArray=[]}
+INFO  2022-12-09 20:18:36 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:147) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/nander', filesArray=[folder, bolder]}
+INFO  2022-12-09 20:18:38 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:147) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/nander/bolder', filesArray=[]}
+INFO  2022-12-09 20:18:39 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:147) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/nander', filesArray=[folder, bolder]}
+INFO  2022-12-09 20:29:46 [JavaFX Application Thread] controller.mainWindowController (mainWindowController.java:212) - Error shown to user: Login must be 3-12 characters
+INFO  2022-12-09 20:29:56 [JavaFX Application Thread] controller.mainWindowController (mainWindowController.java:212) - Error shown to user: Password must be 3-12 characters
+INFO  2022-12-09 20:30:03 [JavaFX Application Thread] controller.mainWindowController (mainWindowController.java:212) - Error shown to user: Passwords does not match
+INFO  2022-12-09 20:30:14 [JavaFX Application Thread] controller.mainWindowController (mainWindowController.java:212) - Error shown to user: Passwords does not match
+INFO  2022-12-09 20:30:20 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:147) - client received CommandMessageWithInfo{command=ERROR, content=[Token is incorrect], path='null', filesArray=null}
+INFO  2022-12-09 20:30:20 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:212) - Error shown to user: Token is incorrect
+INFO  2022-12-09 20:49:44 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=AUTH_OK, content=[2], path='null', filesArray=null}
+INFO  2022-12-09 20:49:44 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/nander', filesArray=[folder, bolder]}
+INFO  2022-12-09 20:53:10 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=AUTH_OK, content=[2], path='null', filesArray=null}
+INFO  2022-12-09 20:53:10 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/nander', filesArray=[folder, bolder]}
+INFO  2022-12-09 20:53:18 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/lol', filesArray=[folder, bolder]}
+INFO  2022-12-09 20:53:20 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/lol/folder', filesArray=[]}
+INFO  2022-12-09 20:53:20 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/lol', filesArray=[folder, bolder]}
+INFO  2022-12-09 20:53:21 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/lol/bolder', filesArray=[]}
+INFO  2022-12-09 20:53:22 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/lol', filesArray=[folder, bolder]}
+INFO  2022-12-09 20:53:27 [JavaFX Application Thread] controller.mainWindowController (mainWindowController.java:191) - Error shown to user: Only letters and numbers are allowed
+INFO  2022-12-09 20:53:34 [JavaFX Application Thread] controller.mainWindowController (mainWindowController.java:191) - Error shown to user: Only letters and numbers are allowed
+INFO  2022-12-09 20:53:38 [JavaFX Application Thread] controller.mainWindowController (mainWindowController.java:191) - Error shown to user: Only letters and numbers are allowed
+INFO  2022-12-09 20:53:45 [JavaFX Application Thread] controller.mainWindowController (mainWindowController.java:191) - Error shown to user: Only letters and numbers are allowed
+INFO  2022-12-09 20:56:20 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=AUTH_OK, content=[2], path='null', filesArray=null}
+INFO  2022-12-09 20:56:20 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/lol', filesArray=[folder, bolder]}
+INFO  2022-12-09 20:56:28 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, bolder]}
+INFO  2022-12-09 20:59:46 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:125) - client received CommandMessageWithInfo{command=AUTH_OK, content=[2], path='null', filesArray=null}
+INFO  2022-12-09 20:59:46 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:125) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, bolder]}
+INFO  2022-12-09 20:59:51 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:125) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, bolder, koks]}
+INFO  2022-12-09 20:59:53 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:125) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender/koks', filesArray=[]}
+INFO  2022-12-09 20:59:57 [JavaFX Application Thread] controller.mainWindowController (mainWindowController.java:190) - Error shown to user: Choose different name
+INFO  2022-12-09 21:07:45 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:129) - client received CommandMessageWithInfo{command=AUTH_OK, content=[2], path='null', filesArray=null}
+INFO  2022-12-09 21:07:45 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:129) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, bolder, koks]}
+INFO  2022-12-09 21:07:49 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:129) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, bolder]}
+INFO  2022-12-09 21:19:08 [JavaFX Application Thread] controller.mainWindowController (mainWindowController.java:198) - Error shown to user: Passwords does not match
+INFO  2022-12-09 21:19:15 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:128) - client received CommandMessageWithInfo{command=AUTH_OK, content=[3], path='null', filesArray=null}
+INFO  2022-12-09 21:19:15 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:128) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/3/log2', filesArray=[readme.txt]}

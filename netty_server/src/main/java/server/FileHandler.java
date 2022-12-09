@@ -17,7 +17,6 @@ public class FileHandler {
     private static DataBaseService service = NettyServer.getDataBaseService();
     private static final Logger LOGGER = LogManager.getLogger(FileHandler.class);
 
-    //private static final File readmeFile = new File("netty_server/src/main/resources/ReadmeFile.txt"); //path from resources
     private static final File readmeFile = new File("ReadmeFile.txt");
 
     private static final String readmeContent = "Welcome to cloud service app";
@@ -115,11 +114,11 @@ public class FileHandler {
         File dir = new File(oldPath);
         dir.renameTo(new File(newPath));
     }
-    public static void main(String[] args) throws IOException {
-
-        renameFolder("netty_server/serverFolder/1/lender" ,
-                "netty_server/serverFolder/1/fender");
-    }
+//    public static void main(String[] args) throws IOException {
+//
+//        renameFolder("netty_server/serverFolder/1/lender" ,
+//                "netty_server/serverFolder/1/fender");
+//    }
 //        System.out.println(levelUp("serverFolder/1/nick1/folder"));
 //}
 //        String path = "netty_server/serverFolder/1/nick1";

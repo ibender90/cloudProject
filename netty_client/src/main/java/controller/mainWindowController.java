@@ -59,6 +59,9 @@ public class mainWindowController implements Initializable, OnMessageReceived {
 
     private static final Logger LOGGER = LogManager.getLogger(mainWindowController.class);
 
+    private final int MINLENGTH = 2;
+    private final int MAXLENGTH = 12;
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -70,29 +73,7 @@ public class mainWindowController implements Initializable, OnMessageReceived {
 
     }
 
-    public void changeNick(ActionEvent actionEvent) {
-        changeNickPanel.setVisible(true);
-        mainPanel.setVisible(false);
-        String newNick = newNickField.getText();
-        try{
-            hasForbiddenCharacters(newNick);
-            if (sizeNotWithinLimits(newNick)) {
-                throw new LoginSizeNotInLimitsException();
-            }
-            rootDirectoryForUser = null;
-            sendValidNick(newNick);
-            changeNickPanel.setVisible(false);
-            mainPanel.setVisible(true);
-        } catch (IncorrectLoginNameException | LoginSizeNotInLimitsException e) {
-            showError(e.getMessage());
-        }
-    }
-
-    private void sendValidNick(String newNick) {
-        net.sendMessage(new CommandMessageWithInfo(CHANGENICK, new String[]{userID, newNick}));
-    }
-
-    public void cancelNewFolder(ActionEvent actionEvent) {
+    public void hideNewFolderPanel(ActionEvent actionEvent) {
         giveNameToFolderWindow.setVisible(false);
         mainPanel.setVisible(true);
     }
@@ -115,14 +96,17 @@ public class mainWindowController implements Initializable, OnMessageReceived {
     }
 
 
-    private void authOk(String id) {
-        userID = id;
-        loginPanel.setVisible(false);
-        registerPanel.setVisible(false);
-        mainPanel.setVisible(true);
+    private void requestFiles(String id) {
         CommandMessageWithInfo initPathAndFiles = new CommandMessageWithInfo(INIT, new String[]{userID});
         net.sendMessage(initPathAndFiles);
     }
+
+    private void showUi() {
+        loginPanel.setVisible(false);
+        registerPanel.setVisible(false);
+        mainPanel.setVisible(true);
+    }
+
 
     private void initializeListView(String[] filesArray) throws IOException {
         Platform.runLater(() -> {
@@ -146,7 +130,11 @@ public class mainWindowController implements Initializable, OnMessageReceived {
             Commands command = responseFromServer.getCommand();
             String[] content = responseFromServer.getContent();
             switch (command) {
-                case AUTH_OK -> authOk(content[0]);
+                case AUTH_OK -> {
+                    userID = content[0];
+                    requestFiles(userID);
+                    showUi();
+                }
                 case ERROR -> showError(content[0]);
                 case PATHANDFILES -> {
                     initializePath(responseFromServer.getPath());
@@ -171,22 +159,23 @@ public class mainWindowController implements Initializable, OnMessageReceived {
                     File file = fileChooser.showSaveDialog(stage);
                     if (file != null) {
                         try {
-                            Path destination = Path.of(file.getPath());
-                            if(!Files.exists(destination)) {
-
-                                Path f = Files.createFile(destination);
-                                Files.write(f, fileToSave.getBytes());
-                            } else {
-                                showError("already exists");
-                            }
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                            //todo define this error
-                            showError("Error saving file");
+                            saveFile(file, fileToSave.getBytes());
+                        } catch (IOException | FileExistsException e) {
+                            showError(e.getMessage());
                         }
                     }
                 }
         );
+    }
+
+    private void saveFile(File file, byte[] data) throws IOException, FileExistsException {
+        Path destination = Path.of(file.getPath());
+        if (!Files.exists(destination)) {
+            Path f = Files.createFile(destination);
+            Files.write(f, data);
+        } else {
+            throw new FileExistsException();
+        }
     }
 
     private void initializePath(String path) {
@@ -214,35 +203,32 @@ public class mainWindowController implements Initializable, OnMessageReceived {
         mainPanel.setVisible(false);
     }
 
-    private String giveName() {
+    private String validateName() throws IncorrectFolderNameException {
         String folderName = nameInputField.getText();
-        folderName = folderName.trim();
+        if (folderName == null) {
+            throw new IncorrectFolderNameException();
+        }
+        checkFolderNameIsValid(folderName);
+        return folderName;
+    }
+
+    public void createFolder(ActionEvent actionEvent) {
+        String folderName;
         try {
-            if (!incorrectFolderName(folderName)) {
-                return folderName;
-            } else {
-                throw new IncorrectFolderNameException();
-            }
+            folderName = validateName();
+            CommandMessageWithInfo msg = new CommandMessageWithInfo(MKDIR);
+            msg.setPath(currentPath + "/" + folderName);
+            net.sendMessage(msg);
+            hideNewFolderPanel(actionEvent);
         } catch (IncorrectFolderNameException e) {
             showError(e.getMessage());
         }
-        return "null";
     }
 
-    public void makeFolder(ActionEvent actionEvent) {
-        String correctName = giveName();
-        if (correctName.equals("null")) {
-            return;
+    private void checkFolderNameIsValid(String name) throws IncorrectFolderNameException {
+        if (name.equals("") || name.startsWith(".") || name.startsWith("/") || name.endsWith(".") || name.endsWith("/")) {
+            throw new IncorrectFolderNameException();
         }
-        CommandMessageWithInfo msg = new CommandMessageWithInfo(MKDIR);
-        msg.setPath(currentPath + "/" + correctName);
-        net.sendMessage(msg);
-        giveNameToFolderWindow.setVisible(false);
-        mainPanel.setVisible(true);
-    }
-
-    private boolean incorrectFolderName(String name) {
-        return name.startsWith(".") || name.startsWith("/") || name.endsWith(".") || name.endsWith("/");
     }
 
     private void initClickListener() {
@@ -294,35 +280,50 @@ public class mainWindowController implements Initializable, OnMessageReceived {
         try {
             validateFields(login, pass);
             checkPassMatches(pass, confirmPass);
-        } catch (PasswordMismatchException | IncorrectLoginNameException |
+            CommandMessageWithInfo registerMessage = new CommandMessageWithInfo(REGISTER);
+            registerMessage.setContent(new String[]{token, login, pass});
+            net.sendMessage(registerMessage);
+
+        } catch (PasswordMismatchException | IncorrectCharactersException | NullPointerException |
                  LoginSizeNotInLimitsException | PasswordSizeNotInLimitsException e) {
             showError(e.getMessage());
-            return;
         }
-        CommandMessageWithInfo registerMessage = new CommandMessageWithInfo(REGISTER);
-        registerMessage.setContent(new String[]{token, login, pass});
-        net.sendMessage(registerMessage);
+
     }
 
-    private void validateFields(String login, String pass) throws IncorrectLoginNameException, LoginSizeNotInLimitsException, PasswordSizeNotInLimitsException {
+    private void validateFields(String login, String pass) throws IncorrectCharactersException, LoginSizeNotInLimitsException, PasswordSizeNotInLimitsException {
         hasForbiddenCharacters(login);
-        if (sizeNotWithinLimits(login)) {
-            throw new LoginSizeNotInLimitsException();
-        }
+        validateLoginLength(login);
+        validatePassLength(pass);
+    }
+
+    private void validatePassLength(String pass) throws PasswordSizeNotInLimitsException {
         if (sizeNotWithinLimits(pass)) {
             throw new PasswordSizeNotInLimitsException();
         }
     }
 
-    private boolean sizeNotWithinLimits(String input) {
-        return input.length() < 2 || input.length() > 12;
+    private void validateLoginLength(String login) throws LoginSizeNotInLimitsException {
+        if (sizeNotWithinLimits(login)) {
+            throw new LoginSizeNotInLimitsException();
+        }
     }
 
-    private void hasForbiddenCharacters(String login) throws IncorrectLoginNameException {
-        for (int i = 0; i < login.length(); i++) {
-            if (!Character.isDigit(login.charAt(i))
-                    && !Character.isLetter(login.charAt(i))) {
-                throw new IncorrectLoginNameException();
+    private void validateNickNameSize(String nick) throws IncorrectNicknameSizeException {
+        if (sizeNotWithinLimits(nick)) {
+            throw new IncorrectNicknameSizeException();
+        }
+    }
+
+    private boolean sizeNotWithinLimits(String input) {
+        return input.length() < MINLENGTH || input.length() > MAXLENGTH;
+    }
+
+    private void hasForbiddenCharacters(String input) throws IncorrectCharactersException {
+        for (int i = 0; i < input.length(); i++) {
+            if (!Character.isDigit(input.charAt(i))
+                    && !Character.isLetter(input.charAt(i))) {
+                throw new IncorrectCharactersException();
             }
         }
     }
@@ -345,7 +346,7 @@ public class mainWindowController implements Initializable, OnMessageReceived {
 
     public void delete(ActionEvent actionEvent) {
         String name = fileList.getSelectionModel().getSelectedItem();
-        if(name != null) {
+        if (name != null) {
             Platform.runLater(() -> {
                 Alert alert = new Alert(
                         Alert.AlertType.WARNING,
@@ -363,12 +364,41 @@ public class mainWindowController implements Initializable, OnMessageReceived {
         }
     }
 
-    public NettyNet getNet() {
-        return net;
-    }
 
     public void changePass(ActionEvent actionEvent) {
 
+    }
+
+    public void showChangeNickPanel(ActionEvent actionEvent) {
+        changeNickPanel.setVisible(true);
+        mainPanel.setVisible(false);
+    }
+
+    private void sendValidNick(String newNick) {
+        net.sendMessage(new CommandMessageWithInfo(CHANGENICK, new String[]{userID, newNick}));
+    }
+
+    public void renameUser(ActionEvent actionEvent) {
+        try {
+            String validNick = validateNewNick();
+            rootDirectoryForUser = null;
+            sendValidNick(validNick);
+            hideChangeNickPanel(actionEvent);
+        } catch (IncorrectCharactersException | IncorrectNicknameSizeException e) {
+            showError(e.getMessage());
+        }
+    }
+
+    private String validateNewNick() throws IncorrectCharactersException, IncorrectNicknameSizeException {
+        String newNick = newNickField.getText();
+        hasForbiddenCharacters(newNick);
+        validateNickNameSize(newNick);
+        return newNick;
+    }
+
+    public void hideChangeNickPanel(ActionEvent actionEvent) {
+        changeNickPanel.setVisible(false);
+        mainPanel.setVisible(true);
     }
 }
 
