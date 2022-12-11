@@ -3,7 +3,6 @@ package database;
 import exceptions.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import server.FileHandler;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -217,16 +216,15 @@ public class DataBaseService {
         preparedStatement.execute();
     }
 
-    public void changePass(String userId, String oldPass, String newPass) throws SQLException, WrongPasswordException {
+    public void changePass(String userId, String oldPass, String newPass) throws SQLException, exceptions.WrongPasswordException {
         checkPassIsCorrect(userId, oldPass);
-        PreparedStatement preparedStatement = connection.prepareStatement("UPDATE users SET password = ?" +
-                "WHERE id = ?");
+        PreparedStatement preparedStatement = connection.prepareStatement("UPDATE users SET password = ? WHERE id = ?");
         preparedStatement.setString(1, newPass);
         preparedStatement.setString(2, userId);
         preparedStatement.execute();
     }
 
-    private void checkPassIsCorrect(String userID, String oldPass) throws SQLException, WrongPasswordException {
+    private void checkPassIsCorrect(String userID, String oldPass) throws SQLException, exceptions.WrongPasswordException {
         PreparedStatement ps = connection.prepareStatement(
                 "SELECT login FROM users WHERE id = ? AND password = ?"
         );

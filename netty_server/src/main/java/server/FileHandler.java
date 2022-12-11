@@ -1,7 +1,6 @@
 package server;
 
 import database.DataBaseService;
-import exceptions.ChooseAfileNotFolderException;
 import exceptions.FolderExistsException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

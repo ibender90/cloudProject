@@ -434,3 +434,6 @@ INFO  2022-12-11 10:47:51 [nioEventLoopGroup-3-1] server.FileHandler (FileHandle
 INFO  2022-12-11 10:47:51 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:141) - RESPONSE IS CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, Tokens.txt, Tokens2.txt, bolder]}
 INFO  2022-12-11 10:47:54 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=DOWNLOAD, content=null, path='netty_server/serverFolder/2/bender/Tokens.txt', filesArray=null}
 INFO  2022-12-11 10:48:09 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=DOWNLOAD, content=null, path='netty_server/serverFolder/2/bender/Tokens.txt', filesArray=null}
+INFO  2022-12-11 11:28:11 [main] database.DataBaseService (DataBaseService.java:185) - CONNECTION WITH DATABASE ESTABLISHED
+INFO  2022-12-11 11:28:11 [main] server.NettyServer (NettyServer.java:35) - SERVER STARTED
+INFO  2022-12-11 11:28:11 [main] server.FileHandler (FileHandler.java:49) - ROOT DIRECTORY EXISTS - OK

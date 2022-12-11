@@ -8,6 +8,7 @@
     <artifactId>cloud_storage</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
     <modules>
         <module>netty_client</module>
         <module>netty_common</module>

@@ -28,9 +28,9 @@ public class NettyServer {
     public void run() throws InterruptedException {
         EventLoopGroup bossGroup = new NioEventLoopGroup();
         EventLoopGroup workerGroup = new NioEventLoopGroup();
+        dataBaseService = new DataBaseService();
         try{
             ServerBootstrap b = new ServerBootstrap();
-            dataBaseService = new DataBaseService();
             dataBaseService.start();
             LOGGER.info("SERVER STARTED");
             FileHandler.makeServerFolderIfAbsent();
