@@ -1,9 +1,6 @@
 package database;
 
-import exceptions.InvalidTokenException;
-import exceptions.LoginAlreadyExistsInDbException;
-import exceptions.TokenIsAlreadyTakenException;
-import exceptions.WrongLoginOrPassException;
+import exceptions.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import server.FileHandler;
@@ -218,6 +215,27 @@ public class DataBaseService {
         preparedStatement.setString(1, newNick);
         preparedStatement.setString(2, userId);
         preparedStatement.execute();
+    }
+
+    public void changePass(String userId, String oldPass, String newPass) throws SQLException, WrongPasswordException {
+        checkPassIsCorrect(userId, oldPass);
+        PreparedStatement preparedStatement = connection.prepareStatement("UPDATE users SET password = ?" +
+                "WHERE id = ?");
+        preparedStatement.setString(1, newPass);
+        preparedStatement.setString(2, userId);
+        preparedStatement.execute();
+    }
+
+    private void checkPassIsCorrect(String userID, String oldPass) throws SQLException, WrongPasswordException {
+        PreparedStatement ps = connection.prepareStatement(
+                "SELECT login FROM users WHERE id = ? AND password = ?"
+        );
+        ps.setString(1, userID);
+        ps.setString(2, oldPass);
+        ResultSet resultSet = ps.executeQuery();
+        if (resultSet.isClosed()) {
+            throw new WrongPasswordException();
+        }
     }
 }
 //    public static void main(String[] args) throws SQLException, ClassNotFoundException, WrongLoginOrPassException {

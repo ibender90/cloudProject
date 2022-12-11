@@ -27,7 +27,6 @@
         <Button onAction="#hideChangeNickPanel" text="RETURN" />
     </VBox>
     <VBox fx:id="changePasswordPanel" visible="false">
-
         <HBox VBox.vgrow="ALWAYS">
             <VBox>
                 <Label text="Please enter your old password:" />
@@ -36,10 +35,13 @@
             <VBox>
                 <Label text="Please enter your new password:" />
                 <PasswordField fx:id="newPasswordField" onAction="#sendChangePass" />
-            </VBox>
+            </VBox><VBox>
+            <Label text="Please confirm your new password:" />
+            <PasswordField fx:id="newPasswordConfirmedField" onAction="#sendChangePass" />
+        </VBox>
         </HBox>
         <Button onAction="#sendChangePass" text="SEND" />
-        <Button onAction="#hideNewFolderPanel" text="RETURN" />
+        <Button onAction="#hideChangePassPanel" text="RETURN" />
     </VBox>
     <VBox fx:id="loginPanel" layoutX="220.0" layoutY="120.0" visible="true">
         <Label text="Login: " />
@@ -67,7 +69,7 @@
         <MenuBar prefHeight="9.0" prefWidth="600.0" visible="true">
             <Menu text="User">
                 <MenuItem onAction="#showChangeNickPanel" text="Change nick" />
-                <MenuItem onAction="#changePass" text="Change pass" />
+                <MenuItem onAction="#showChangePassPanel" text="Change pass" />
                 <MenuItem onAction="#closeApplication" text="Exit" />
             </Menu>
             <Menu text="Edit">

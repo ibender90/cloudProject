@@ -46,7 +46,6 @@ public class MessageHandler extends SimpleChannelInboundHandler<AbstractMessage>
                     }
                 }
                 case INIT -> {
-
                     setPathAndFilesResponse(FileHandler.getPathByID(content[0]));
                 }
                 case CHANGENICK -> {
@@ -58,21 +57,27 @@ public class MessageHandler extends SimpleChannelInboundHandler<AbstractMessage>
                         FileHandler.renameFolder("netty_server/serverFolder/" + userId + "/" + oldNick,
                                 "netty_server/serverFolder/" + userId + "/" + newNick);
                     } catch (SQLException e) {
-                        //todo
+                        errorMessage("Database error");
                         e.printStackTrace();
                     }
                     setPathAndFilesResponse("netty_server/serverFolder/" + userId + "/" + newNick);
-
+                }
+                case CHANGEPASS -> {
+                    try {
+                        service.changePass(content[0], content[1], content[2]);
+                        LOGGER.info("Password for user " + content[0] + " was changed");
+                        setPathAndFilesResponse(FileHandler.getPathByID(content[0]));
+                    } catch (WrongPasswordException e) {
+                        errorMessage(e.getMessage());
+                    }
                 }
                 case REGISTER -> {
                     try {
-                        //token , login , pass
                         service.registerUser(content[0], content[1], content[2]);
                         int id = service.authenticate(content[1], content[2]);
                         FileHandler.makeFolder("netty_server/serverFolder/" + id);
                         String pathForNewUser = "netty_server/serverFolder/" + id + "/" + content[1];
                         FileHandler.makeFolder(pathForNewUser);
-                        //FileHandler.addReadme(pathForNewUser);
                         FileHandler.createReadme(pathForNewUser);
 
                         response.setContent(new String[]{String.valueOf(id)});
@@ -91,27 +96,26 @@ public class MessageHandler extends SimpleChannelInboundHandler<AbstractMessage>
                     }
                 }
                 case CD -> {
-                    if (FileHandler.checkIsDirectory(path)) {  // пока двойной клик по файлу ничего не предусматривает
+                    if (FileHandler.checkIsDirectory(path)) { // пока двойной клик по файлу ничего не предусматривает
                         if (!path.endsWith("/..")) {
                             setPathAndFilesResponse(path);
                         } else {
                             setPathAndFilesResponse(FileHandler.levelUp(path.substring(0, path.length() - 3)));
                         }
                     } else {
+                        LOGGER.info("user double clicked on a " + path);
                         return;
                     }
                 }
                 case DOWNLOAD -> {
-                    if (!FileHandler.checkIsDirectory(path)) {
+                    if (FileHandler.checkIsDirectory(path)) {
+                        errorMessage(new ChooseAfileNotFolderException().getMessage());
+                    } else {
                         FileMessage fileToSend = new FileMessage(path);
                         fileToSend.setBytes(Files.readAllBytes(Path.of(path)));
                         fileToSend.setFilename(new File(Path.of(path).toUri()).getName());
-
                         ctx.writeAndFlush(fileToSend);
                         return;
-                    } else {
-                        //todo new error
-                        errorMessage("Choose a file, not folder");
                     }
                 }
                 case DEL -> {
@@ -125,7 +129,7 @@ public class MessageHandler extends SimpleChannelInboundHandler<AbstractMessage>
             }
         }
         if (abstractMessage instanceof FileMessage fileMessage) {
-            System.out.println("server received" + fileMessage);
+            LOGGER.info("server received" + fileMessage);
             try {
                 FileHandler.saveFileToServer(fileMessage.getCurrentPath(), fileMessage.getBytes(), fileMessage.getFilename());
                 setPathAndFilesResponse(fileMessage.getCurrentPath());

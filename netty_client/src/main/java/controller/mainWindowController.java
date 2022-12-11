@@ -51,6 +51,10 @@ public class mainWindowController implements Initializable, OnMessageReceived {
     public TextField tokenField;
     public VBox changeNickPanel;
     public TextField newNickField;
+    public VBox changePasswordPanel;
+    public PasswordField oldPassField;
+    public PasswordField newPasswordField;
+    public PasswordField newPasswordConfirmedField;
     private String userID;
 
     private String rootDirectoryForUser; //у каждого юзера будет root = serverFolder/id/nick
@@ -89,12 +93,6 @@ public class mainWindowController implements Initializable, OnMessageReceived {
         Platform.exit();
         System.exit(0);
     }
-
-
-    public void sendChangePass(ActionEvent actionEvent) {
-
-    }
-
 
     private void requestFiles(String id) {
         CommandMessageWithInfo initPathAndFiles = new CommandMessageWithInfo(INIT, new String[]{userID});
@@ -278,7 +276,7 @@ public class mainWindowController implements Initializable, OnMessageReceived {
         String confirmPass = confirmPasswordField.getText();
         String token = tokenField.getText();
         try {
-            validateFields(login, pass);
+            validateRegisterFields(login, pass);
             checkPassMatches(pass, confirmPass);
             CommandMessageWithInfo registerMessage = new CommandMessageWithInfo(REGISTER);
             registerMessage.setContent(new String[]{token, login, pass});
@@ -291,7 +289,7 @@ public class mainWindowController implements Initializable, OnMessageReceived {
 
     }
 
-    private void validateFields(String login, String pass) throws IncorrectCharactersException, LoginSizeNotInLimitsException, PasswordSizeNotInLimitsException {
+    private void validateRegisterFields(String login, String pass) throws IncorrectCharactersException, LoginSizeNotInLimitsException, PasswordSizeNotInLimitsException {
         hasForbiddenCharacters(login);
         validateLoginLength(login);
         validatePassLength(pass);
@@ -364,9 +362,27 @@ public class mainWindowController implements Initializable, OnMessageReceived {
         }
     }
 
+    public void showChangePassPanel() {
+       changePasswordPanel.setVisible(true);
+       mainPanel.setVisible(false);
+    }
 
-    public void changePass(ActionEvent actionEvent) {
+    public void sendChangePass(ActionEvent actionEvent) {
+        try {
+            String validNewPass = validateNewPassword();
+            String oldPass = oldPassField.getText();
+            net.sendMessage(new CommandMessageWithInfo(CHANGEPASS, new String[]{userID, oldPass, validNewPass}));
+            hideChangePassPanel(actionEvent);
+        } catch (PasswordSizeNotInLimitsException | PasswordMismatchException e){
+            showError(e.getMessage());
+        }
+    }
 
+    private String validateNewPassword() throws PasswordSizeNotInLimitsException, PasswordMismatchException {
+        String newPass = newPasswordField.getText();
+        validatePassLength(newPass);
+        checkPassMatches(newPass,newPasswordConfirmedField.getText());
+        return newPass;
     }
 
     public void showChangeNickPanel(ActionEvent actionEvent) {
@@ -374,15 +390,11 @@ public class mainWindowController implements Initializable, OnMessageReceived {
         mainPanel.setVisible(false);
     }
 
-    private void sendValidNick(String newNick) {
-        net.sendMessage(new CommandMessageWithInfo(CHANGENICK, new String[]{userID, newNick}));
-    }
-
     public void renameUser(ActionEvent actionEvent) {
         try {
             String validNick = validateNewNick();
             rootDirectoryForUser = null;
-            sendValidNick(validNick);
+            net.sendMessage(new CommandMessageWithInfo(CHANGENICK, new String[]{userID, validNick}));
             hideChangeNickPanel(actionEvent);
         } catch (IncorrectCharactersException | IncorrectNicknameSizeException e) {
             showError(e.getMessage());
@@ -398,6 +410,11 @@ public class mainWindowController implements Initializable, OnMessageReceived {
 
     public void hideChangeNickPanel(ActionEvent actionEvent) {
         changeNickPanel.setVisible(false);
+        mainPanel.setVisible(true);
+    }
+
+    public void hideChangePassPanel(ActionEvent actionEvent) {
+        changePasswordPanel.setVisible(false);
         mainPanel.setVisible(true);
     }
 }

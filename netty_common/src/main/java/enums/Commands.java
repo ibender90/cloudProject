@@ -3,9 +3,10 @@ package enums;
 import java.util.Objects;
 
 public enum Commands {
-    MKDIR("@%mkdrir"), DEL("@%DELETE"), AUTH("@%auth"), DISCONNECT("@?DISCN"),
-    AUTH_OK("@%AOK"), ERROR("@%ER"), PATHANDFILES("@%ALLOK"), DOWNLOAD("@%DWNLD"),
-    CD("@%CHANGEDIR"), INIT("@%INITIALIZE"), REGISTER("@%REGISTERUSER"), CHANGENICK("@%NICKCHANGE");
+    MKDIR("@%pathForNewFolder"), DEL("@%PathToDelete"), AUTH("@%Login,pass"), DISCONNECT("@?"),
+    AUTH_OK("@%ID"), ERROR("@%ErrorMessage"), PATHANDFILES("@%Path,FilesArray"), DOWNLOAD("@%PathToDownload"),
+    CD("@%path"), INIT("@%GetPathByID"), REGISTER("@%Token,Login,Pass"), CHANGENICK("@%UserID,NewNick"),
+    CHANGEPASS("@%UserID,OldPass,NewPass");
 
     private String command;
 

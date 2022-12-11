@@ -299,3 +299,138 @@ INFO  2022-12-09 21:19:15 [nioEventLoopGroup-3-10] server.MessageHandler (Messag
 INFO  2022-12-09 21:19:15 [nioEventLoopGroup-3-10] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=INIT, content=[3], path='null', filesArray=null}
 INFO  2022-12-09 21:19:15 [nioEventLoopGroup-3-10] server.FileHandler (FileHandler.java:26) - log2
 INFO  2022-12-09 21:19:15 [nioEventLoopGroup-3-10] server.MessageHandler (MessageHandler.java:136) - RESPONSE IS CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/3/log2', filesArray=[readme.txt]}
+INFO  2022-12-11 09:16:14 [main] database.DataBaseService (DataBaseService.java:189) - CONNECTION WITH DATABASE ESTABLISHED
+INFO  2022-12-11 09:16:14 [main] server.NettyServer (NettyServer.java:35) - SERVER STARTED
+INFO  2022-12-11 09:16:14 [main] server.FileHandler (FileHandler.java:51) - ROOT DIRECTORY EXISTS - OK
+INFO  2022-12-11 09:16:26 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=AUTH, content=[log1, pass1], path='null', filesArray=null}
+INFO  2022-12-11 09:16:26 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:136) - RESPONSE IS CommandMessageWithInfo{command=AUTH_OK, content=[2], path='null', filesArray=null}
+INFO  2022-12-11 09:16:26 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=INIT, content=[2], path='null', filesArray=null}
+INFO  2022-12-11 09:16:26 [nioEventLoopGroup-3-1] server.FileHandler (FileHandler.java:25) - bender
+INFO  2022-12-11 09:16:26 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:136) - RESPONSE IS CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, bolder]}
+INFO  2022-12-11 09:46:05 [main] database.DataBaseService (DataBaseService.java:189) - CONNECTION WITH DATABASE ESTABLISHED
+INFO  2022-12-11 09:46:05 [main] server.NettyServer (NettyServer.java:35) - SERVER STARTED
+INFO  2022-12-11 09:46:05 [main] server.FileHandler (FileHandler.java:51) - ROOT DIRECTORY EXISTS - OK
+INFO  2022-12-11 09:46:14 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=AUTH, content=[log1, pass1], path='null', filesArray=null}
+INFO  2022-12-11 09:46:14 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:136) - RESPONSE IS CommandMessageWithInfo{command=AUTH_OK, content=[2], path='null', filesArray=null}
+INFO  2022-12-11 09:46:14 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=INIT, content=[2], path='null', filesArray=null}
+INFO  2022-12-11 09:46:14 [nioEventLoopGroup-3-1] server.FileHandler (FileHandler.java:25) - bender
+INFO  2022-12-11 09:46:14 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:136) - RESPONSE IS CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, bolder]}
+INFO  2022-12-11 09:46:56 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=CHANGEPASS, content=[2, 1234, 1234], path='null', filesArray=null}
+INFO  2022-12-11 09:46:56 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:136) - RESPONSE IS CommandMessageWithInfo{command=PATHANDFILES, content=null, path='null', filesArray=null}
+INFO  2022-12-11 10:01:57 [main] database.DataBaseService (DataBaseService.java:186) - CONNECTION WITH DATABASE ESTABLISHED
+INFO  2022-12-11 10:01:57 [main] server.NettyServer (NettyServer.java:35) - SERVER STARTED
+INFO  2022-12-11 10:01:57 [main] server.FileHandler (FileHandler.java:51) - ROOT DIRECTORY EXISTS - OK
+INFO  2022-12-11 10:02:05 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=AUTH, content=[log1, pass1], path='null', filesArray=null}
+INFO  2022-12-11 10:02:05 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:142) - RESPONSE IS CommandMessageWithInfo{command=AUTH_OK, content=[2], path='null', filesArray=null}
+INFO  2022-12-11 10:02:05 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=INIT, content=[2], path='null', filesArray=null}
+INFO  2022-12-11 10:02:05 [nioEventLoopGroup-3-1] server.FileHandler (FileHandler.java:25) - bender
+INFO  2022-12-11 10:02:05 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:142) - RESPONSE IS CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, bolder]}
+INFO  2022-12-11 10:02:24 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=CHANGEPASS, content=[2, pas11, 1234], path='null', filesArray=null}
+INFO  2022-12-11 10:02:24 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:142) - RESPONSE IS CommandMessageWithInfo{command=ERROR, content=[Current password is incorrect], path='null', filesArray=null}
+INFO  2022-12-11 10:03:45 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=CHANGEPASS, content=[2, pas1, 1234], path='null', filesArray=null}
+INFO  2022-12-11 10:03:45 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:142) - RESPONSE IS CommandMessageWithInfo{command=ERROR, content=[Current password is incorrect], path='null', filesArray=null}
+INFO  2022-12-11 10:04:13 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=CHANGEPASS, content=[2, pass1, 1234], path='null', filesArray=null}
+INFO  2022-12-11 10:04:13 [nioEventLoopGroup-3-1] server.FileHandler (FileHandler.java:25) - bender
+INFO  2022-12-11 10:04:13 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:142) - RESPONSE IS CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, bolder]}
+INFO  2022-12-11 10:06:50 [nioEventLoopGroup-3-2] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=AUTH, content=[log1, pass1], path='null', filesArray=null}
+INFO  2022-12-11 10:06:50 [nioEventLoopGroup-3-2] server.MessageHandler (MessageHandler.java:142) - RESPONSE IS CommandMessageWithInfo{command=ERROR, content=[Wrong login or password], path='null', filesArray=null}
+INFO  2022-12-11 10:06:56 [nioEventLoopGroup-3-2] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=AUTH, content=[log1, 1234], path='null', filesArray=null}
+INFO  2022-12-11 10:06:56 [nioEventLoopGroup-3-2] server.MessageHandler (MessageHandler.java:142) - RESPONSE IS CommandMessageWithInfo{command=AUTH_OK, content=[2], path='null', filesArray=null}
+INFO  2022-12-11 10:06:56 [nioEventLoopGroup-3-2] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=INIT, content=[2], path='null', filesArray=null}
+INFO  2022-12-11 10:06:56 [nioEventLoopGroup-3-2] server.FileHandler (FileHandler.java:25) - bender
+INFO  2022-12-11 10:06:56 [nioEventLoopGroup-3-2] server.MessageHandler (MessageHandler.java:142) - RESPONSE IS CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, bolder]}
+INFO  2022-12-11 10:27:03 [main] database.DataBaseService (DataBaseService.java:186) - CONNECTION WITH DATABASE ESTABLISHED
+INFO  2022-12-11 10:27:03 [main] server.NettyServer (NettyServer.java:35) - SERVER STARTED
+INFO  2022-12-11 10:27:03 [main] server.FileHandler (FileHandler.java:52) - ROOT DIRECTORY EXISTS - OK
+INFO  2022-12-11 10:27:15 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=AUTH, content=[log1, 1234], path='null', filesArray=null}
+INFO  2022-12-11 10:27:15 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:142) - RESPONSE IS CommandMessageWithInfo{command=AUTH_OK, content=[2], path='null', filesArray=null}
+INFO  2022-12-11 10:27:15 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=INIT, content=[2], path='null', filesArray=null}
+INFO  2022-12-11 10:27:15 [nioEventLoopGroup-3-1] server.FileHandler (FileHandler.java:26) - bender
+INFO  2022-12-11 10:27:15 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:142) - RESPONSE IS CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, bolder]}
+INFO  2022-12-11 10:27:17 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=CD, content=null, path='netty_server/serverFolder/2/bender/folder', filesArray=null}
+INFO  2022-12-11 10:27:17 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:107) - user double clicked on a netty_server/serverFolder/2/bender/folder
+INFO  2022-12-11 10:27:18 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=CD, content=null, path='netty_server/serverFolder/2/bender/bolder', filesArray=null}
+INFO  2022-12-11 10:27:18 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:107) - user double clicked on a netty_server/serverFolder/2/bender/bolder
+INFO  2022-12-11 10:33:45 [main] database.DataBaseService (DataBaseService.java:186) - CONNECTION WITH DATABASE ESTABLISHED
+INFO  2022-12-11 10:33:45 [main] server.NettyServer (NettyServer.java:35) - SERVER STARTED
+INFO  2022-12-11 10:33:45 [main] server.FileHandler (FileHandler.java:52) - ROOT DIRECTORY EXISTS - OK
+INFO  2022-12-11 10:33:53 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=AUTH, content=[log1, 1234], path='null', filesArray=null}
+INFO  2022-12-11 10:33:53 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:142) - RESPONSE IS CommandMessageWithInfo{command=AUTH_OK, content=[2], path='null', filesArray=null}
+INFO  2022-12-11 10:33:53 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=INIT, content=[2], path='null', filesArray=null}
+INFO  2022-12-11 10:33:53 [nioEventLoopGroup-3-1] server.FileHandler (FileHandler.java:26) - bender
+INFO  2022-12-11 10:33:53 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:142) - RESPONSE IS CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, bolder]}
+INFO  2022-12-11 10:33:55 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=CD, content=null, path='netty_server/serverFolder/2/bender/folder', filesArray=null}
+INFO  2022-12-11 10:33:55 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:142) - RESPONSE IS CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender/folder', filesArray=[]}
+INFO  2022-12-11 10:33:57 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=CD, content=null, path='netty_server/serverFolder/2/bender/folder/..', filesArray=null}
+INFO  2022-12-11 10:33:57 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:142) - RESPONSE IS CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, bolder]}
+INFO  2022-12-11 10:33:57 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=CD, content=null, path='netty_server/serverFolder/2/bender/bolder', filesArray=null}
+INFO  2022-12-11 10:33:57 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:142) - RESPONSE IS CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender/bolder', filesArray=[]}
+INFO  2022-12-11 10:34:01 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=MKDIR, content=null, path='netty_server/serverFolder/2/bender/bolder/sdf', filesArray=null}
+INFO  2022-12-11 10:34:01 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:142) - RESPONSE IS CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender/bolder', filesArray=[sdf]}
+INFO  2022-12-11 10:34:02 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=CD, content=null, path='netty_server/serverFolder/2/bender/bolder/sdf', filesArray=null}
+INFO  2022-12-11 10:34:02 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:142) - RESPONSE IS CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender/bolder/sdf', filesArray=[]}
+INFO  2022-12-11 10:34:03 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=CD, content=null, path='netty_server/serverFolder/2/bender/bolder/sdf/..', filesArray=null}
+INFO  2022-12-11 10:34:03 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:142) - RESPONSE IS CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender/bolder', filesArray=[sdf]}
+INFO  2022-12-11 10:34:03 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=CD, content=null, path='netty_server/serverFolder/2/bender/bolder/..', filesArray=null}
+INFO  2022-12-11 10:34:03 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:142) - RESPONSE IS CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, bolder]}
+INFO  2022-12-11 10:34:21 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received FileMessage{currentPath='netty_server/serverFolder/2/bender', bytes total =71, filename='Tokens.txt'}
+INFO  2022-12-11 10:34:21 [nioEventLoopGroup-3-1] server.FileHandler (FileHandler.java:61) - NEW FILE WRITTEN TO SERVER
+INFO  2022-12-11 10:34:21 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:142) - RESPONSE IS CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, Tokens.txt, bolder]}
+INFO  2022-12-11 10:34:25 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=DOWNLOAD, content=null, path='netty_server/serverFolder/2/bender/Tokens.txt', filesArray=null}
+INFO  2022-12-11 10:34:25 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:142) - RESPONSE IS CommandMessageWithInfo{command=PATHANDFILES, content=null, path='null', filesArray=null}
+INFO  2022-12-11 10:34:40 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=DOWNLOAD, content=null, path='netty_server/serverFolder/2/bender/folder', filesArray=null}
+INFO  2022-12-11 10:34:40 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:142) - RESPONSE IS CommandMessageWithInfo{command=ERROR, content=[Choose a file, not folder], path='null', filesArray=null}
+INFO  2022-12-11 10:36:11 [nioEventLoopGroup-3-2] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=AUTH, content=[log1, 123], path='null', filesArray=null}
+INFO  2022-12-11 10:36:11 [nioEventLoopGroup-3-2] server.MessageHandler (MessageHandler.java:142) - RESPONSE IS CommandMessageWithInfo{command=ERROR, content=[Wrong login or password], path='null', filesArray=null}
+INFO  2022-12-11 10:36:15 [nioEventLoopGroup-3-2] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=AUTH, content=[log1, 1233], path='null', filesArray=null}
+INFO  2022-12-11 10:36:15 [nioEventLoopGroup-3-2] server.MessageHandler (MessageHandler.java:142) - RESPONSE IS CommandMessageWithInfo{command=ERROR, content=[Wrong login or password], path='null', filesArray=null}
+INFO  2022-12-11 10:36:19 [nioEventLoopGroup-3-2] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=AUTH, content=[log1, 1234], path='null', filesArray=null}
+INFO  2022-12-11 10:36:19 [nioEventLoopGroup-3-2] server.MessageHandler (MessageHandler.java:142) - RESPONSE IS CommandMessageWithInfo{command=AUTH_OK, content=[2], path='null', filesArray=null}
+INFO  2022-12-11 10:36:19 [nioEventLoopGroup-3-2] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=INIT, content=[2], path='null', filesArray=null}
+INFO  2022-12-11 10:36:19 [nioEventLoopGroup-3-2] server.FileHandler (FileHandler.java:26) - bender
+INFO  2022-12-11 10:36:19 [nioEventLoopGroup-3-2] server.MessageHandler (MessageHandler.java:142) - RESPONSE IS CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, Tokens.txt, bolder]}
+INFO  2022-12-11 10:36:30 [nioEventLoopGroup-3-2] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=CD, content=null, path='netty_server/serverFolder/2/bender/bolder', filesArray=null}
+INFO  2022-12-11 10:36:30 [nioEventLoopGroup-3-2] server.MessageHandler (MessageHandler.java:142) - RESPONSE IS CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender/bolder', filesArray=[sdf]}
+INFO  2022-12-11 10:36:38 [nioEventLoopGroup-3-2] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=CD, content=null, path='netty_server/serverFolder/2/bender/bolder/..', filesArray=null}
+INFO  2022-12-11 10:36:38 [nioEventLoopGroup-3-2] server.MessageHandler (MessageHandler.java:142) - RESPONSE IS CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, Tokens.txt, bolder]}
+INFO  2022-12-11 10:37:41 [nioEventLoopGroup-3-2] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=CD, content=null, path='netty_server/serverFolder/2/bender/Tokens.txt', filesArray=null}
+INFO  2022-12-11 10:37:41 [nioEventLoopGroup-3-2] server.MessageHandler (MessageHandler.java:106) - user double clicked on a netty_server/serverFolder/2/bender/Tokens.txt
+INFO  2022-12-11 10:38:29 [nioEventLoopGroup-3-2] server.MessageHandler (MessageHandler.java:30) - server received FileMessage{currentPath='netty_server/serverFolder/2/bender', bytes total =71, filename='Tokens2.txt'}
+INFO  2022-12-11 10:38:29 [nioEventLoopGroup-3-2] server.FileHandler (FileHandler.java:61) - NEW FILE WRITTEN TO SERVER
+INFO  2022-12-11 10:38:29 [nioEventLoopGroup-3-2] server.MessageHandler (MessageHandler.java:142) - RESPONSE IS CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, Tokens.txt, Tokens2.txt, bolder]}
+INFO  2022-12-11 10:38:51 [nioEventLoopGroup-3-2] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=DOWNLOAD, content=null, path='netty_server/serverFolder/2/bender/Tokens2.txt', filesArray=null}
+INFO  2022-12-11 10:38:51 [nioEventLoopGroup-3-2] server.MessageHandler (MessageHandler.java:142) - RESPONSE IS CommandMessageWithInfo{command=PATHANDFILES, content=null, path='null', filesArray=null}
+INFO  2022-12-11 10:41:01 [nioEventLoopGroup-3-2] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=DOWNLOAD, content=null, path='netty_server/serverFolder/2/bender/folder', filesArray=null}
+INFO  2022-12-11 10:41:01 [nioEventLoopGroup-3-2] server.MessageHandler (MessageHandler.java:142) - RESPONSE IS CommandMessageWithInfo{command=ERROR, content=[Choose a file, not folder], path='null', filesArray=null}
+INFO  2022-12-11 10:42:33 [main] database.DataBaseService (DataBaseService.java:186) - CONNECTION WITH DATABASE ESTABLISHED
+INFO  2022-12-11 10:42:33 [main] server.NettyServer (NettyServer.java:35) - SERVER STARTED
+INFO  2022-12-11 10:42:33 [main] server.FileHandler (FileHandler.java:52) - ROOT DIRECTORY EXISTS - OK
+INFO  2022-12-11 10:42:41 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=AUTH, content=[log1, 1234], path='null', filesArray=null}
+INFO  2022-12-11 10:42:41 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:143) - RESPONSE IS CommandMessageWithInfo{command=AUTH_OK, content=[2], path='null', filesArray=null}
+INFO  2022-12-11 10:42:41 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=INIT, content=[2], path='null', filesArray=null}
+INFO  2022-12-11 10:42:41 [nioEventLoopGroup-3-1] server.FileHandler (FileHandler.java:26) - bender
+INFO  2022-12-11 10:42:41 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:143) - RESPONSE IS CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, Tokens.txt, Tokens2.txt, bolder]}
+INFO  2022-12-11 10:42:45 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=DOWNLOAD, content=null, path='netty_server/serverFolder/2/bender/folder', filesArray=null}
+INFO  2022-12-11 10:44:38 [main] database.DataBaseService (DataBaseService.java:186) - CONNECTION WITH DATABASE ESTABLISHED
+INFO  2022-12-11 10:44:39 [main] server.NettyServer (NettyServer.java:35) - SERVER STARTED
+INFO  2022-12-11 10:44:39 [main] server.FileHandler (FileHandler.java:52) - ROOT DIRECTORY EXISTS - OK
+INFO  2022-12-11 10:44:44 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=AUTH, content=[log1, 1234], path='null', filesArray=null}
+INFO  2022-12-11 10:44:44 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:140) - RESPONSE IS CommandMessageWithInfo{command=AUTH_OK, content=[2], path='null', filesArray=null}
+INFO  2022-12-11 10:44:44 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=INIT, content=[2], path='null', filesArray=null}
+INFO  2022-12-11 10:44:44 [nioEventLoopGroup-3-1] server.FileHandler (FileHandler.java:26) - bender
+INFO  2022-12-11 10:44:44 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:140) - RESPONSE IS CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, Tokens.txt, Tokens2.txt, bolder]}
+INFO  2022-12-11 10:44:47 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=DOWNLOAD, content=null, path='netty_server/serverFolder/2/bender/folder', filesArray=null}
+INFO  2022-12-11 10:44:47 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:140) - RESPONSE IS CommandMessageWithInfo{command=ERROR, content=[Choose a file, not folder], path='null', filesArray=null}
+INFO  2022-12-11 10:47:40 [main] database.DataBaseService (DataBaseService.java:186) - CONNECTION WITH DATABASE ESTABLISHED
+INFO  2022-12-11 10:47:40 [main] server.NettyServer (NettyServer.java:35) - SERVER STARTED
+INFO  2022-12-11 10:47:40 [main] server.FileHandler (FileHandler.java:52) - ROOT DIRECTORY EXISTS - OK
+INFO  2022-12-11 10:47:43 [main] database.DataBaseService (DataBaseService.java:186) - CONNECTION WITH DATABASE ESTABLISHED
+INFO  2022-12-11 10:47:43 [main] server.NettyServer (NettyServer.java:35) - SERVER STARTED
+INFO  2022-12-11 10:47:43 [main] server.FileHandler (FileHandler.java:52) - ROOT DIRECTORY EXISTS - OK
+INFO  2022-12-11 10:47:51 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=AUTH, content=[log1, 1234], path='null', filesArray=null}
+INFO  2022-12-11 10:47:51 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:141) - RESPONSE IS CommandMessageWithInfo{command=AUTH_OK, content=[2], path='null', filesArray=null}
+INFO  2022-12-11 10:47:51 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=INIT, content=[2], path='null', filesArray=null}
+INFO  2022-12-11 10:47:51 [nioEventLoopGroup-3-1] server.FileHandler (FileHandler.java:26) - bender
+INFO  2022-12-11 10:47:51 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:141) - RESPONSE IS CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, Tokens.txt, Tokens2.txt, bolder]}
+INFO  2022-12-11 10:47:54 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=DOWNLOAD, content=null, path='netty_server/serverFolder/2/bender/Tokens.txt', filesArray=null}
+INFO  2022-12-11 10:48:09 [nioEventLoopGroup-3-1] server.MessageHandler (MessageHandler.java:30) - server received CommandMessageWithInfo{command=DOWNLOAD, content=null, path='netty_server/serverFolder/2/bender/Tokens.txt', filesArray=null}

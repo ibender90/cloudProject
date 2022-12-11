@@ -1,6 +1,7 @@
 package server;
 
 import database.DataBaseService;
+import exceptions.ChooseAfileNotFolderException;
 import exceptions.FolderExistsException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -22,9 +23,7 @@ public class FileHandler {
     private static final String readmeContent = "Welcome to cloud service app";
 
     public static String getPathByID(String id) {
-        LOGGER.info(service.getNick(id));
         return "netty_server/serverFolder/" + id + "/" + service.getNick(id);
-
     }
 
     public static String levelUp(String stringPath) {
@@ -61,7 +60,7 @@ public class FileHandler {
         } else throw new FileAlreadyExistsException("File already exists");
     }
 
-    public static boolean checkIsDirectory(String path) {
+    public static boolean checkIsDirectory(String path){
         return new File(path).isDirectory();
     }
 

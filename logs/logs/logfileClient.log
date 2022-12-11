@@ -654,3 +654,149 @@ INFO  2022-12-09 21:07:49 [nioEventLoopGroup-2-1] controller.mainWindowControlle
 INFO  2022-12-09 21:19:08 [JavaFX Application Thread] controller.mainWindowController (mainWindowController.java:198) - Error shown to user: Passwords does not match
 INFO  2022-12-09 21:19:15 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:128) - client received CommandMessageWithInfo{command=AUTH_OK, content=[3], path='null', filesArray=null}
 INFO  2022-12-09 21:19:15 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:128) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/3/log2', filesArray=[readme.txt]}
+INFO  2022-12-11 09:16:26 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:128) - client received CommandMessageWithInfo{command=AUTH_OK, content=[2], path='null', filesArray=null}
+INFO  2022-12-11 09:16:26 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:128) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, bolder]}
+INFO  2022-12-11 09:46:14 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=AUTH_OK, content=[2], path='null', filesArray=null}
+INFO  2022-12-11 09:46:14 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, bolder]}
+INFO  2022-12-11 09:46:37 [JavaFX Application Thread] controller.mainWindowController (mainWindowController.java:196) - Error shown to user: Passwords does not match
+INFO  2022-12-11 09:46:46 [JavaFX Application Thread] controller.mainWindowController (mainWindowController.java:196) - Error shown to user: Password must be 3-12 characters
+INFO  2022-12-11 09:46:56 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='null', filesArray=null}
+WARN  2022-12-11 09:46:56 [nioEventLoopGroup-2-1] io.netty.channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.NullPointerException: Cannot invoke "String.substring(int)" because "text" is null
+	at controller.mainWindowController.setPathLabel(mainWindowController.java:121) ~[classes/:?]
+	at controller.mainWindowController.initializePath(mainWindowController.java:180) ~[classes/:?]
+	at controller.mainWindowController.onReceive(mainWindowController.java:138) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:17) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:7) ~[classes/:?]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:308) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+INFO  2022-12-11 10:02:05 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=AUTH_OK, content=[2], path='null', filesArray=null}
+INFO  2022-12-11 10:02:05 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, bolder]}
+INFO  2022-12-11 10:02:24 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=ERROR, content=[Current password is incorrect], path='null', filesArray=null}
+INFO  2022-12-11 10:02:24 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:196) - Error shown to user: Current password is incorrect
+INFO  2022-12-11 10:03:45 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=ERROR, content=[Current password is incorrect], path='null', filesArray=null}
+INFO  2022-12-11 10:03:45 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:196) - Error shown to user: Current password is incorrect
+INFO  2022-12-11 10:04:13 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, bolder]}
+INFO  2022-12-11 10:06:50 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=ERROR, content=[Wrong login or password], path='null', filesArray=null}
+INFO  2022-12-11 10:06:50 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:196) - Error shown to user: Wrong login or password
+INFO  2022-12-11 10:06:56 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=AUTH_OK, content=[2], path='null', filesArray=null}
+INFO  2022-12-11 10:06:56 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, bolder]}
+INFO  2022-12-11 10:27:15 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=AUTH_OK, content=[2], path='null', filesArray=null}
+INFO  2022-12-11 10:27:15 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, bolder]}
+INFO  2022-12-11 10:33:53 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=AUTH_OK, content=[2], path='null', filesArray=null}
+INFO  2022-12-11 10:33:53 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, bolder]}
+INFO  2022-12-11 10:33:55 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender/folder', filesArray=[]}
+INFO  2022-12-11 10:33:57 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, bolder]}
+INFO  2022-12-11 10:33:57 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender/bolder', filesArray=[]}
+INFO  2022-12-11 10:34:01 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender/bolder', filesArray=[sdf]}
+INFO  2022-12-11 10:34:02 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender/bolder/sdf', filesArray=[]}
+INFO  2022-12-11 10:34:03 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender/bolder', filesArray=[sdf]}
+INFO  2022-12-11 10:34:03 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, bolder]}
+INFO  2022-12-11 10:34:21 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, Tokens.txt, bolder]}
+INFO  2022-12-11 10:34:25 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received FileMessage{currentPath='netty_server/serverFolder/2/bender/Tokens.txt', bytes total =71, filename='Tokens.txt'}
+INFO  2022-12-11 10:34:25 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='null', filesArray=null}
+WARN  2022-12-11 10:34:25 [nioEventLoopGroup-2-1] io.netty.channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.NullPointerException: Cannot invoke "String.substring(int)" because "text" is null
+	at controller.mainWindowController.setPathLabel(mainWindowController.java:121) ~[classes/:?]
+	at controller.mainWindowController.initializePath(mainWindowController.java:180) ~[classes/:?]
+	at controller.mainWindowController.onReceive(mainWindowController.java:138) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:17) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:7) ~[classes/:?]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:308) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+INFO  2022-12-11 10:34:40 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=ERROR, content=[Choose a file, not folder], path='null', filesArray=null}
+INFO  2022-12-11 10:34:40 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:196) - Error shown to user: Choose a file, not folder
+INFO  2022-12-11 10:36:11 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=ERROR, content=[Wrong login or password], path='null', filesArray=null}
+INFO  2022-12-11 10:36:11 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:196) - Error shown to user: Wrong login or password
+INFO  2022-12-11 10:36:15 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=ERROR, content=[Wrong login or password], path='null', filesArray=null}
+INFO  2022-12-11 10:36:15 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:196) - Error shown to user: Wrong login or password
+INFO  2022-12-11 10:36:19 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=AUTH_OK, content=[2], path='null', filesArray=null}
+INFO  2022-12-11 10:36:19 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, Tokens.txt, bolder]}
+INFO  2022-12-11 10:36:30 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender/bolder', filesArray=[sdf]}
+INFO  2022-12-11 10:36:38 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, Tokens.txt, bolder]}
+INFO  2022-12-11 10:38:29 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, Tokens.txt, Tokens2.txt, bolder]}
+INFO  2022-12-11 10:38:51 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received FileMessage{currentPath='netty_server/serverFolder/2/bender/Tokens2.txt', bytes total =71, filename='Tokens2.txt'}
+INFO  2022-12-11 10:38:51 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='null', filesArray=null}
+WARN  2022-12-11 10:38:51 [nioEventLoopGroup-2-1] io.netty.channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.NullPointerException: Cannot invoke "String.substring(int)" because "text" is null
+	at controller.mainWindowController.setPathLabel(mainWindowController.java:121) ~[classes/:?]
+	at controller.mainWindowController.initializePath(mainWindowController.java:180) ~[classes/:?]
+	at controller.mainWindowController.onReceive(mainWindowController.java:138) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:17) ~[classes/:?]
+	at net.ClientMsgHandler.channelRead0(ClientMsgHandler.java:7) ~[classes/:?]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:308) ~[netty-codec-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+INFO  2022-12-11 10:38:56 [JavaFX Application Thread] controller.mainWindowController (mainWindowController.java:196) - Error shown to user: File with this name already exists
+INFO  2022-12-11 10:41:01 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=ERROR, content=[Choose a file, not folder], path='null', filesArray=null}
+INFO  2022-12-11 10:41:01 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:196) - Error shown to user: Choose a file, not folder
+INFO  2022-12-11 10:42:41 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=AUTH_OK, content=[2], path='null', filesArray=null}
+INFO  2022-12-11 10:42:41 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, Tokens.txt, Tokens2.txt, bolder]}
+INFO  2022-12-11 10:44:44 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=AUTH_OK, content=[2], path='null', filesArray=null}
+INFO  2022-12-11 10:44:44 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, Tokens.txt, Tokens2.txt, bolder]}
+INFO  2022-12-11 10:44:47 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=ERROR, content=[Choose a file, not folder], path='null', filesArray=null}
+INFO  2022-12-11 10:44:47 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:196) - Error shown to user: Choose a file, not folder
+INFO  2022-12-11 10:47:51 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=AUTH_OK, content=[2], path='null', filesArray=null}
+INFO  2022-12-11 10:47:51 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received CommandMessageWithInfo{command=PATHANDFILES, content=null, path='netty_server/serverFolder/2/bender', filesArray=[folder, Tokens.txt, Tokens2.txt, bolder]}
+INFO  2022-12-11 10:47:54 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received FileMessage{currentPath='netty_server/serverFolder/2/bender/Tokens.txt', bytes total =71, filename='Tokens.txt'}
+INFO  2022-12-11 10:47:59 [JavaFX Application Thread] controller.mainWindowController (mainWindowController.java:196) - Error shown to user: File with this name already exists
+INFO  2022-12-11 10:48:09 [nioEventLoopGroup-2-1] controller.mainWindowController (mainWindowController.java:126) - client received FileMessage{currentPath='netty_server/serverFolder/2/bender/Tokens.txt', bytes total =71, filename='Tokens.txt'}
